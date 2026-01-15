@@ -1,0 +1,244 @@
+Club de robótica 2026
+Optimizar el desempeño competitivo del club mediante análisis de reglamentos, diseño iterativo de mejoras, implementación técnica, evaluación con métricas y ajuste estratégico continuo.
+•	2 momentos (documentación, construcción.)
+•	Mentorías (los antiguos apoyan a los nuevos cuando requieran. 
+•	Reunión inicial SIEMPRE para alinear los objetivos a alcanzar en el día, determinar tiempos y evaluar estrategias para alcanzarlos (max 20 min).
+•	Reunión de cierre SIEMPRE para analizar cumplimiento de objetivos, asignación de tareas asincrónicas (de ser necesario) y checklist para próxima sesión.
+•	Tareas asincrónicas (creación de bitácora con información de interés y consultas, hallazgos relacionados a los temas tratados en las sesiones o retos a realizar y tema de exposición (cuando le sea asignada), debe estar publicada y compartida en el drive).
+•	Exposición o video (5 min máximo) explicativo sobre un ajuste de control, filtro, tolerancia o cualquier tema relacionado con programación avanzada que se consulte (una exposición cada 2 semanas, expositor elegido con ruleta aleatoria, tema a elección del expositor pero pendiente por validación antes de la exposición).
+•	Requisitos para competencias (documentación del robot a construir: esquemáticos, lista de materiales, códigos de pruebas unitarias, códigos finales con versiones (no nombres poco informativos como swampy2.0 y demás, un nombre concreto ej: Robot_sumo_marzo_2026_v2, cada que se haga un cambio significativo en el código guardarlo como una versión adicional y documentar en el código el cambio que se realizó).
+Checklist de listos para competir:
+Robot completa el reto interno con consistencia ≥85% (5/6 corridas exitosas).
+Código modular y documentado: bitácora con métricas y fotos.
+Chasis estable y cableado limpio: plan de pruebas y roles definidos.
+
+
+
+
+
+Bitácora técnica (plantilla mínima)
+1.	Objetivo del reto (una frase con verbo Bloom).
+2.	Esquema/diagrama (foto o dibujo simple).
+3.	Código (versión y cambios): qué y por qué.
+4.	Métricas clave: tiempos, error, consistencia.
+5.	Lecciones aprendidas y siguiente ajuste.
+
+
+•	Sin documentación no hay materiales ni competencia. 
+•	Roles por equipo: Líder técnico, Programador, Documentación/Pruebas (rotan en cada reto y cada grupo es responsable de saber en qué orden van a cambiar).
+
+
+Cronograma de eventos (Medellín) y sus categorías
+Solo eventos y categorías (cuadro resumen)
+Fecha	Evento (Ciudad/Sede)	Categorías / Retos
+28 Mar 2026	IYRC Colombia – Medellín (EAFIT)	Mid (10–13): Road Challenge, Sumo (teleoperado), Creation · Senior (14–17): Sumo autónomo, Save the Forest, Creation · Junior (7–9): Bowling, Road Challenge Jr, etc. [edubotica.com.co]
+
+23 May 2026	ROBOJAM Nations – Medellín (The Columbus School)	Abierto (todas las edades): Skill Drive, BumperBot, Bristle Race, StackIN, Path Attack JR/PRO, CrossBot, Disk Derby. Registro cierra 24 Abr 2026. [robojam.live]
+
+26 Sep 2026	ROBOJAM Game On – Medellín	Programa educativo/retos: Bristle Race, Biped Race, Path Attack, Skill Drive, StackIN, Bumper Bot, Path Attack Pro (formato local). [robojam.live], [maex.com.co]
+
+verificar inscripciones y horarios 4–6 semanas antes de cada fecha.
+
+
+Temáticas por sesión:
+ Sábado 31 de enero — Reunion inicial, Fritzing básico + preparación competitiva
+•	Objetivo (Bloom): Aplicar Fritzing para documentar conexiones y generar BOM.
+•	Contenido (90 min dentro de la sesión): 
+1.	Convenciones del club: colores, nombres de redes, bloques.
+2.	Breadboard: colocar MCU, drivers, sensores, conectores; cablear ordenado.
+3.	BOM: exportar CSV (cantidad, referencia, descripción).
+4.	Partes externas: importar. fzpz (conectores/módulos que falten).
+•	Resto de la sesión: diagnóstico rápido de robots (sumo/skill drive/path), definición de KPIs por equipo y primera batería de pruebas.
+•	Entregables: Proyecto.fzz, BOM.csv, foto del breadboard y KPIs iniciales.
+
+Febrero — Reto mensual: Sumo autónomo
+Fechas tentativas: 7, 14, 21 y 28 de febrero
+•	Semana 1 (7 Feb):
+o	Objetivo: Analizar reglamento (dojo, penalizaciones) y Diseñar tracción/chasis; detección de borde/oponente.
+o	KPIs: consistencia ≥75% (≥ 7/10 combates de práctica).
+o	Fritzing (20’): actualizar conexiones + BOM (motores/driver/batería).
+•	Semana 2 (14 Feb):
+o	Objetivo: Implementar control de búsqueda y empuje; probar escenarios de apertura.
+o	KPIs: tiempo hasta contacto ≤ umbral, perfeccionar la ubicación del oponente, buscar alternativas para mejorar la velocidad de respuesta.
+o	Fritzing (20’): documentar cambios (pines, alimentación).
+•	Semana 3 (21 Feb):
+o	Objetivo: Ajustar parámetros y robustez mecánica/eléctrica; simulacro interno de llaves.
+o	KPIs: aplicar las correcciones pertinentes, según los combates.
+•	Semana 4 (28 Feb):
+o	Objetivo: Evaluar desempeño y Planificar mejoras del siguiente reto.
+o	Entregables: informe técnico + video breve; BOM consolidada por equipo.
+
+Marzo — Path Attack PRO y/o Skill Drive + IYRC (≤17)
+Fechas tentativas: 7, 14, 21 y 28 de marzo
+IYRC Colombia: sábado 28 Mar 2026, sede EAFIT (Medellín). Aplican categorías con tope de edad. Fuente
+•	Semana 1 (7 Mar):
+o	Objetivo: Analizar mapa/reglas de Path Attack PRO o trayectorias de Skill Drive; estrategia de ruta.
+o	KPIs: checkpoints alcanzados; tiempo parcial vs. objetivo.
+o	Fritzing (15’): etiquetar señales de línea/encoders.
+•	Semana 2 (14 Mar):
+o	Objetivo: Implementar control (PID con rampas) y Verificar repetibilidad.
+o	KPIs: error lateral ↓; consistencia ≥80%.
+o	IYRC (si aplica): preparar equipos ≤17 (Sumo/Save the Forest/Road/Creation).
+•	Semana 3 (21 Mar):
+o	Objetivo: Integrar ajustes y Simular clasificatorias/finales.
+o	KPIs: sin penalizaciones; tiempos dentro del percentil 50 del club.
+•	Semana 4 (28 Mar):
+o	IYRC – Competencia (equipos ≤17).
+Abril — Pre ROBOJAM Nations: integración y registro
+Fechas tentativas: 4, 11, 18 y 25 de abril
+Cierre de registro ROBOJAM Nations: 24 Abr 2026. Fuente
+•	Semana 1 (4 Abr):
+o	Objetivo: Refinar parámetros, roles (driver/estratega/registro) y checklist.
+o	Fritzing (30’): refuerzo: BOM cerrada para compras/repuestos.
+
+•	Semana 2 (11 Abr):
+o	Objetivo: Simular fases (clasificatorias/finales) para Skill Drive / BumperBot / Path Attack (JR/PRO) / StackIN.
+o	KPIs: consistencia ≥85%; penalizaciones = 0–1.
+•	Semana 3 (18 Abr):
+o	Objetivo: Validar estrategia por reto; planes de contingencia.
+o	Administrativo: preparar inscripciones (un equipo = máx. 3 miembros por robot/reto).
+•	Semana 4 (25 Abr):
+o	Objetivo: Ajustar detalles finales y logística (herramientas, repuestos, pistas).
+o	Nota: verificar que todos los equipos inscritos cumplieron checklist.
+________________________________________
+Mayo — ROBOJAM Nations + AAR
+Fechas tentativas: 2, 9, 16 y 23 de mayo
+ROBOJAM Nations: sábado 23 May 2026, The Columbus School (Medellín). Fuente
+•	Semana 1 (2 May):
+o	Objetivo: Ensayar estrategias; últimas calibraciones; simulacro cronometrado.
+•	Semana 2 (9 May):
+o	Objetivo: Consolidar la ejecución del reto elegido (p. ej., Skill Drive y BumperBot).
+o	KPIs: reproducibilidad ≥85%; sin fallos críticos.
+•	Semana 3 (16 May):
+o	Objetivo: Bootcamp interno recomendado (6–8 h) el fin de semana anterior: integración total, checklist final, empaques.
+•	Semana 4 (23 May):
+o	Competencia ROBOJAM Nations (clasificatorias y finales).
+o	Entregables: recolectar métricas reales y video; AAR corto post evento (o en la semana siguiente).
+
+🗓️ Plan mensual (Junio–Septiembre) – Consolidación y Game On
+Junio — AAR + Comunicaciones/Telemetría
+•	Objetivo (Bloom): Evaluar desempeño en Nations y Implementar mejoras con ESP NOW/BLE; telemetría básica (tasa de paquetes ≥95%).
+Julio — BumperBot con resiliencia
+•	Objetivo: Integrar detección de colisión y Optimizar recuperación; robustez mecánica/eléctrica.
+•	KPIs: tiempo de recuperación ↓, fiabilidad ↑.
+Agosto — Visión básica (si aplica)
+•	Objetivo: Desarrollar detección de color/forma (RPi 3B+ opcional) y Validar decisiones en pista.
+•	KPIs: FPS ≥ objetivo; precisión ≥90%.
+•	Fritzing (20’): documentar cámaras/reguladores en Breadboard y BOM.
+Septiembre — ROBOJAM Game On (26 Sep 2026)
+•	Objetivo: Presentar prototipos con documentación básica (Fritzing + BOM) y competir en retos del ecosistema (Skill Drive, Path Attack, BumperBot, etc.).
+•	AAR post evento: consolidar aprendizajes y definir mejoras de fin de año.
+•	Fuentes: Eventos RoboJam · Programa Game On — Medellín
+
+
+
+
+
+Antiguos miembros
+Nuevos miembros
+
+
+
+
+Para los nuevos: 
+Objetivo de formación
+Comprender fundamentos de robótica y aplicar programación/electrónica en múltiples plataformas para resolver retos internos con consistencia, integrar subsistemas (control + sensores + mecánica) y presentar resultados con evidencia técnica (bitácora y demo).
+Ruta híbrida en dos fases
+Fase A — Onboarding intensivo (8–10 semanas, 3 h/semana)
+Objetivo: Comprender fundamentos y aplicar rutinas esenciales en cada plataforma con retos internos.
+•	LEGO SPIKE (2–3 semanas):
+Seguidor de línea básico en bloques; lectura de sensores, giros, parsimonia en el diseño del chasis.
+•	Arduino (2–3 semanas):
+Lecturas analógicas/digitales, PWM, encoders; seguidor de línea + evasión de obstáculos.
+•	Raspberry Pi Pico / ESP32 (2–3 semanas):
+MicroPython/C++; timers, interrupciones, control más fino; mini-desafío de telemetría (ESP-NOW/BLE).
+•	Raspberry Pi 3B+ (1–2 semanas):
+Conceptos de Linux y visión básica (detección de color/forma); prueba controlada en pista.
+
+Bloom (Fase A): Identificar componentes, Comprender lecturas y Aplicar control básico, Analizar señales para ajustes.
+Checklist de “listos para competir”:
+•	Robot completa el reto interno con consistencia ≥85% (5/6 corridas exitosas).
+•	Código modular y documentado; bitácora con métricas y fotos.
+•	Chasis estable y cableado limpio; plan de pruebas y roles definidos.
+
+Fase B — Competencia puente (selección y preparación)
+•	A partir de la semana 9–10, realizas scrimmages internos (simulacros con reglamentos) y seleccionas 2–3 equipos para el primer evento externo.
+•	Quienes aún no alcanzan el checklist continúan en retos mensuales y apoyan en pruebas/documentación (crecen como equipo técnico).
+cronograma
+Semana 1 — Onboarding + LEGO SPIKE (bloques)
+•	Objetivo (Bloom): Identificar sensores/actuadores y Comprender la lógica de bloques.
+•	Bloques (3 h): 
+1.	20’ briefing y seguridad; 40’ sensores de luz/color; 60’ chasis básico; 40’ prueba en pista sencilla; 20’ cierre/bitácora.
+•	KPIs: completar circuito básico sin salir de pista; tiempo ≤ objetivo; consistencia ≥ 70% (≥ 7/10 corridas).
+•	Tarea asincrónica (30–45’): vídeo corto explicando el montaje y parámetros.
+
+Semana 2 — SPIKE seguidor de línea
+•	Objetivo: Aplicar lecturas de sensores y Ajustar parámetros de seguimiento.
+•	Bloques: calibración de sensor, curvas, bifurcación; mini–reto cronometrado.
+•	KPIs: error lateral ≤ umbral; consistencia ≥ 75%.
+•	Entregables: bitácora con tiempos promedio y desviación.
+
+Semana 3 — Arduino fundamentos
+•	Objetivo: Comprender E/S digital/analógica y Aplicar PWM/encoders.
+•	Bloques: cableado limpio, lectura IR, control de motores, prueba de evasión de obstáculos.
+•	KPIs: tasa de lecturas válidas ≥ 95%; cableado con “etiquetas y amarras”; consistencia ≥ 75%.
+•	Tarea: esquema del circuito + check de pines.
+
+Semana 4 — Arduino seguidor de línea (control proporcional)
+•	Objetivo: Aplicar control proporcional; Analizar efecto de Kp.
+•	Bloques: tuning básico, dos pistas (recta/curva), comparativo Kp bajo vs. alto.
+•	KPIs: mejora ≥ 10% en tiempo y en error; consistencia ≥ 80%.
+•	Entregables: gráfica simple de error vs. Kp.
+
+Semana 5 — Arduino PID “liviano”
+•	Objetivo: Diseñar y Ajustar PID (Kp–Ki–Kd) con filtrado (mediana/promedio).
+•	Bloques: implementación PID, pruebas AB, registro de datos.
+•	KPIs: tiempo promedio ↓ y consistencia ≥ 85%; código modular (funciones separadas).
+•	Tarea: vídeo 3–5’ del tuning y bitácora con versión de código.
+Semana 6 — Raspberry Pi Pico (MicroPython) o ESP32 (C++/MicroPython)
+•	Objetivo: Implementar timers e interrupciones; Evaluar impacto en control.
+•	Bloques: mapeo de pines, ISR para encoders, control de velocidad estable; mini–reto de precisión.
+•	KPIs: latencia de lectura ≤ umbral; estabilidad de velocidad (variación ≤ X%).
+•	Entregables: registro de telemetría (CSV simple).
+
+Semana 7 — ESP32 comunicaciones (ESP–NOW/BLE) + telemetría
+•	Objetivo: Integrar comunicación entre robots/control; Justificar parámetros de envío.
+•	Bloques: pairing, envío de paquetes, dashboard básico (serial).
+•	KPIs: tasa de paquetes recibidos ≥ 95%; caída de frames ≤ 5%; consistencia ≥ 85%.
+•	Tarea: reporte corto de pérdida de paquetes y mitigaciones.
+
+Semana 8 — Raspberry Pi 3B+ visión básica
+•	Objetivo: Desarrollar detección de color/forma y Validar decisión de control.
+•	Bloques: pipeline simple (thresholding), prueba en pista con “zona color”; integración con actuadores.
+•	KPIs: FPS ≥ objetivo; precisión detección ≥ 90%; tiempo de respuesta ≤ N ms.
+•	Entregables: vídeo demo + notas de calibración.
+
+Semana 9 — Scrimmage interno (reglamentos IYRC/RoboJam)
+•	Objetivo: Evaluar desempeño bajo reglas y Refinar estrategia.
+•	Bloques: jueceo, clasificación y finales simuladas; checklist técnico.
+•	KPIs: consistencia ≥ 85%, penalizaciones = 0–1; tiempos dentro del percentil 50 del club.
+•	Entregables: hoja de juez + bitácora final por equipo.
+
+Semana 10 — Selección y plan de competencia
+•	Objetivo: Decidir equipos para evento y Planificar mejoras.
+•	Bloques: revisión de KPIs, roles por equipo, plan de iteración 4–6 semanas, logística (materiales/pista).
+•	Output: equipos “listos” (ver checklist), ruta de preparación hacia IYRC (si aplica) y RoboJam Nations.
+
+Evaluación:
+Rúbrica de evaluación (por sesión/proyecto)
+•	Funcionalidad (40%): cumple el reto, métricas y consistencia.
+•	Calidad técnica (30%): montaje, modularidad, buenas prácticas.
+•	Estrategia y pruebas (20%): tuning, control de variables, evidencias.
+•	Presentación/defensa (10%): claridad técnica, conclusiones y próximas acciones.
+Bitácora técnica (plantilla mínima)
+1.	Objetivo del reto (una frase con verbo Bloom).
+2.	Esquema/diagrama (foto o dibujo simple).
+3.	Código (versión y cambios): qué y por qué.
+4.	Métricas clave: tiempos, error, consistencia.
+5.	Lecciones aprendidas y siguiente ajuste.
+
+Eventos meta en Medellín
+•	IYRC Colombia — 28 de marzo de 2026 (EAFIT, Medellín). Categorías: Mid (10–13) y retos como Road Challenge, Sumo (teleoperado en Mid), Creation. [edubotica.com.co]
+•	ROBOJAM Nations — 23 de mayo de 2026 (The Columbus School, Medellín). Abierto a todas las edades; retos: Skill Drive, BumperBot, Path Attack JR/PRO, StackIN, Bristle Race, CrossBot, Disk Derby. Cierre de registro: 24 de abril de 2026. [robojam.live]
+•	ROBOJAM Game On — 26 de septiembre de 2026 (Medellín). Línea educativa con 7 retos (p. ej., Bristle Race, Biped Race, Path Attack, Skill Drive, StackIN, Bumper Bot, Path Attack Pro). [robojam.live], [maex.com.co]
+
