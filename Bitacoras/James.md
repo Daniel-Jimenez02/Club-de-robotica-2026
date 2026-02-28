@@ -12,6 +12,7 @@ Materiales:
    - Motores
    - Switch electrico
    - jumper wires
+   - Ultrasonido
  Objetos:
   - Rueda giratoria
   - Ruedas
