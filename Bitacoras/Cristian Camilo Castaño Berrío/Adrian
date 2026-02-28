@@ -1,0 +1,33 @@
+Bitácora técnica (plantilla mínima)
+
+1. Aplicar principios de programación y control para desarrollar un robot de sumo capaz de detectar al oponente y empujarlo fuera del área de combate. 
+2. Esquema/diagrama (foto o dibujo simple).
+
+  
+  
+  
+  
+  
+  
+  
+  3. Código (versión y cambios): Lenguaje / Herramienta: Arduino
+
+Versión: v1 (fase inicial)
+
+Descripción del código:
+En esta primera versión no se cuenta aún con un código funcional completo. Se está realizando el planteamiento lógico del programa, definiendo la estructura general, como la lectura de sensores, el control de los motores y la toma de decisiones del robot durante el combate.
+
+Cambios realizados:
+
+Qué se cambió: Se definió la lógica básica del comportamiento del robot (búsqueda, ataque y retroceso).
+
+Por qué: Para tener una base clara que permita un desarrollo ordenado y evitar errores en etapas posteriores.
+4. Métricas clave: Fecha: Sábado 28 de febrero.
+
+Tiempos: En esta etapa inicial se está planificando el proyecto y definiendo estrategias para lograr un desarrollo eficiente. Aún no se miden tiempos de reacción ni de ejecución del robot.
+
+Errores: No se han presentado errores técnicos, ya que el proyecto se encuentra en fase de análisis y diseño.
+
+Consistencia: El trabajo del equipo ha sido constante en la organización de ideas, definición de funciones y planificación del desarrollo.
+
+5. Lecciones aprendidas y siguiente ajuste.
