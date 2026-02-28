@@ -10,3 +10,10 @@ ods 15: vida de ecosistemas terrestres , aqui se me ocurrio un robot que busque 
 mientras el mas facil es la ods 2 , no estamos para cosas faciles si verdaderamente queremos participir para ayudar y para ganar no hay que ir por el camino facil 
 Desarrollar un prototipo robótico autónomo con Inteligencia Artificial para identificar y diagnosticar el estado de salud de fauna en situación de riesgo, con el fin de gestionar el envío de suministros o asistencia veterinaria de manera remota.
 Falta esquematico, explicar aqui como funciona y construir ,no se avanso mucho pero habra mas avanse en la siguiente sesion
+
+Creation_International_IYRC_2026_28_02
+Tengo otra idea hacer un robot que ayude a las comunidades buscando comida,agua y objetos utiles incluye tranportador de cosas como medicamentos con un parlante para que pueda hablar y servir en cualquier situacion
+un recojedor de basura aereo que buque basura baje recoja vuelva deja la basura en el basurero y volver a buscar
+una tercer opción es un cultivedor y cosechador que ayuda a los agricultures a que no tenga que rabajar debajo del sol del cansancio y las enfermedades
+pero incluiremos esp 32 con antena para conectar el conctando la camara sp 32 k
+al final decidemos un robot cosechador con una camera que gire con un sevomotor 360 para que analize el entorno saque con un braso el cultivo lo lleve a una caja que lleva y cuando se llene vuelve deja el cultivo y vuelva trabajar
