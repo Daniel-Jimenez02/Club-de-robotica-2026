@@ -16,6 +16,8 @@ Materiales:
  Objetos:
   - Rueda giratoria
   - Ruedas
+  <img width="2664" height="2325" alt="EPM_bb" src="https://github.com/user-attachments/assets/375fd555-426a-46d1-9e05-8d340d934e7b" />
+
 3.
  PRUEBA DE MOTORES:
     // Motor A
