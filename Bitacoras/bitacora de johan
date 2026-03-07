@@ -19,3 +19,23 @@ pero incluiremos esp 32 con antena para conectar el conctando la camara sp 32 k
 al final decidemos un robot cosechador con una camera que gire con un sevomotor 360 para que analize el entorno saque con un braso el cultivo lo lleve a una caja que lleva y cuando se llene vuelve deja el cultivo y vuelva trabajar
 con un bateria tipo lipo de 7.5 Voltias 3 Amperios 
 Falta esquematico se hace la siguiente secion
+
+Creation_International_YIRC_"="&_28_02
+objetivos:1 plantear el robot, 2 hacer esquematica ,3 lista de materiales
+Un dron recojedor de basura que vaya por los parques visualisando con esp cam  si hay basura baja y recoje la basura con unas pinsas dentro de la caja se recoje la basura se cierra la caja
+busca el basurero mas cercano lo abre con un servo y se va necesitando:
+- un procesador indicado para hacer de la mejor manera la tarea
+- una caja para que migajas o la basura se salgan
+-una pinsa que recoja la basura 
+- volar
+ahora se hara el esquematico que estara en la misma carpeta
+EESPACIO DE COMENTARIO:
+
+consulta_2026:_28_02
+el motorreductor enocoder
+
+
+
+
+
+
