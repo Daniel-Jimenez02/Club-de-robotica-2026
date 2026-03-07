@@ -19,101 +19,155 @@ Materiales:
   <img width="2664" height="2325" alt="EPM_bb" src="https://github.com/user-attachments/assets/375fd555-426a-46d1-9e05-8d340d934e7b" />
 
 3.
- PRUEBA DE MOTORES:
-    // Motor A
-const int IN1 = 8;
-const int IN2 = 9;
+// Pines del puente H
+#define IN1 8
+#define IN2 9
+#define ENA 10
+#define ENA2 11   // segundo ENA
 
-// Motor B
-const int IN3 = 10;
-const int IN4 = 11;
+// Encoder
+#define encoderA 2
+#define encoderB 3
 
-void setup() {
-  pinMode(IN1, OUTPUT);
-  pinMode(IN2, OUTPUT);
-  pinMode(IN3, OUTPUT);
-  pinMode(IN4, OUTPUT);
-}
+volatile long pulsos = 0;
 
-void avanzar() {
-  digitalWrite(IN1, HIGH);
-  digitalWrite(IN2, LOW);
+int velocidad = 200;
 
-  digitalWrite(IN3, HIGH);
-  digitalWrite(IN4, LOW);
-}
+// Ajustar según tu motor
+float pulsos_por_vuelta = 330;
 
-void retroceder() {
-  digitalWrite(IN1, LOW);
-  digitalWrite(IN2, HIGH);
-
-  digitalWrite(IN3, LOW);
-  digitalWrite(IN4, HIGH);
-}
-
-void girarDerecha() {
-  digitalWrite(IN1, HIGH);
-  digitalWrite(IN2, LOW);
-
-  digitalWrite(IN3, LOW);
-  digitalWrite(IN4, LOW);
-}
-
-void girarIzquierda() {
-  digitalWrite(IN1, LOW);
-  digitalWrite(IN2, LOW);
-
-  digitalWrite(IN3, HIGH);
-  digitalWrite(IN4, LOW);
-}
-
-void detener() {
-  digitalWrite(IN1, LOW);
-  digitalWrite(IN2, LOW);
-  digitalWrite(IN3, LOW);
-  digitalWrite(IN4, LOW);
-}
-
-
-void loop() {
-  avanzar();
-  delay(3000);
-
-  detener();
-  delay(1000);
-
-  retroceder();
-  delay(3000);
-
-  detener();
-  delay(1000);
-
-  girarDerecha();
-  delay(2000);
-
-  PRUEBA TCRT5000:
-  const int tcrt= 2;
+// Radio de la rueda en cm
+float radio_rueda = 3.0;
 
 void setup() {
-  pinMode(tcrt, INPUT);
-  Serial.begin(9600);
+
+Serial.begin(9600);
+
+pinMode(IN1, OUTPUT);
+pinMode(IN2, OUTPUT);
+pinMode(ENA, OUTPUT);
+pinMode(ENA2, OUTPUT);
+
+pinMode(encoderA, INPUT);
+pinMode(encoderB, INPUT);
+
+attachInterrupt(digitalPinToInterrupt(encoderA), contar, RISING);
+
+Serial.println("Sistema listo");
+Serial.println("Comandos:");
+Serial.println("F velocidad → Adelante");
+Serial.println("B velocidad → Atras");
+Serial.println("S → Stop");
+Serial.println("R → Reset encoder");
+Serial.println("D → Distancia");
+Serial.println("V → Vueltas");
+
 }
 
 void loop() {
-  int estado = digitalRead(tcrt);
 
-  if (estado == LOW) {
-    Serial.println("NEGRO");
-  } else {
-    Serial.println("BLANCO");
-  }
+if (Serial.available()) {
 
-  delay(500);
+String comando = Serial.readStringUntil('\n');
+
+char orden = comando.charAt(0);
+
+int vel = comando.substring(1).toInt();
+
+switch (orden) {
+
+case 'F':
+adelante(vel);
+Serial.println("Motor adelante");
+break;
+
+case 'B':
+atras(vel);
+Serial.println("Motor atras");
+break;
+
+case 'S':
+parar();
+Serial.println("Motor detenido");
+break;
+
+case 'R':
+pulsos = 0;
+Serial.println("Encoder reiniciado");
+break;
+
+case 'V':
+mostrarVueltas();
+break;
+
+case 'D':
+mostrarDistancia();
+break;
+
 }
 
-  girarIzquierda();
-  delay(2000);
+}
 
-  detener();
-  delay(4000);
+}
+
+// Interrupción del encoder
+void contar() {
+
+if (digitalRead(encoderB) == HIGH)
+pulsos++;
+else
+pulsos--;
+
+}
+
+// Motor adelante
+void adelante(int vel) {
+
+digitalWrite(IN1, HIGH);
+digitalWrite(IN2, LOW);
+analogWrite(ENA, vel);
+analogWrite(ENA2, vel);
+
+}
+
+// Motor atrás
+void atras(int vel) {
+
+digitalWrite(IN1, LOW);
+digitalWrite(IN2, HIGH);
+analogWrite(ENA, vel);
+analogWrite(ENA2, vel);
+
+}
+
+// Stop
+void parar() {
+
+digitalWrite(IN1, LOW);
+digitalWrite(IN2, LOW);
+analogWrite(ENA, 0);
+analogWrite(ENA2, 0);
+
+}
+
+// Mostrar vueltas
+void mostrarVueltas() {
+
+float vueltas = pulsos / pulsos_por_vuelta;
+
+Serial.print("Vueltas: ");
+Serial.println(vueltas);
+
+}
+
+// Mostrar distancia
+void mostrarDistancia() {
+
+float vueltas = pulsos / pulsos_por_vuelta;
+
+float distancia = vueltas * 2 * 3.1416 * radio_rueda;
+
+Serial.print("Distancia recorrida (cm): ");
+Serial.println(distancia);
+
 }
