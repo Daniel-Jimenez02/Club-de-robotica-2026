@@ -21,14 +21,9 @@ con un bateria tipo lipo de 7.5 Voltias 3 Amperios
 Falta esquematico se hace la siguiente secion
 
 Creation_International_YIRC_"="&_28_02
-objetivos:1 plantear el robot, 2 hacer esquematica ,3 lista de materiales
-Un dron recojedor de basura que vaya por los parques visualisando con esp cam  si hay basura baja y recoje la basura con unas pinsas dentro de la caja se recoje la basura se cierra la caja
-busca el basurero mas cercano lo abre con un servo y se va necesitando:
-- un procesador indicado para hacer de la mejor manera la tarea
-- una caja para que migajas o la basura se salgan
--una pinsa que recoja la basura 
-- volar
-ahora se hara el esquematico que estara en la misma carpeta
+objetivos:1 plantear el robot, 2 hacer esquematica ,3 lista de materiales 
+hacer un robot granjero "don Emilio oracio" que es un carro que irá en el cultivo analizarán con ia los cultivos Maduros para levarlos a una caja con un braso robot con servomotores negros 
+queda por definir 
 EESPACIO DE COMENTARIO:
 
 consulta_2026:_28_02
