@@ -1,0 +1,35 @@
+bitacora de johan felipe espinosa graciano 
+soy johan y te pido leer con los ojos la bitacora
+
+Creation_International_IYRC_2026_21_ 02
+participare en la competencia IYRC 2026 y ponga cuidado con la i si no la pnen aparece una empres de envios
+en la categoria creation que consiste en crear un robot capaz de solucionar una de estas ods:
+ods 2: hambre cero ,en este se pueden inventar cultivadores autonomos inteligentes para que las personas no se degasten hasta la muerte debajo del sol para que los demas coman , o tambien hay problemas en encontrar agua potable entonce sun robot que explore el bosque y prados para encontrar fuentes de agua
+ods 3: salud y bienestar , en este se me ocurre un robot que lleve medicamentos seguros ,las personas mueren por no llegar al hospital a tiempo peri see acercamos los medicamentos y lo necesario para que sobrevivan viviran las personas que iban a morir
+ods 15: vida de ecosistemas terrestres , aqui se me ocurrio un robot que busque animales silvestres para su investigacion y poderlos ayudar ,un ejemplo de esto seria buscar especias con pocos integrantes encontrar una pareja y clonarlos
+mientras el mas facil es la ods 2 , no estamos para cosas faciles si verdaderamente queremos participir para ayudar y para ganar no hay que ir por el camino facil 
+Desarrollar un prototipo robótico autónomo con Inteligencia Artificial para identificar y diagnosticar el estado de salud de fauna en situación de riesgo, con el fin de gestionar el envío de suministros o asistencia veterinaria de manera remota.
+Falta esquematico, explicar aqui como funciona y construir ,no se avanso mucho pero habra mas avanse en la siguiente sesion
+
+Creation_International_IYRC_2026_28_02
+Tengo otra idea hacer un robot que ayude a las comunidades buscando comida,agua y objetos utiles incluye tranportador de cosas como medicamentos con un parlante para que pueda hablar y servir en cualquier situacion
+un recojedor de basura aereo que buque basura baje recoja vuelva deja la basura en el basurero y volver a buscar
+una tercer opción es un cultivedor y cosechador que ayuda a los agricultures a que no tenga que rabajar debajo del sol del cansancio y las enfermedades
+pero incluiremos esp 32 con antena para conectar el conctando la camara sp 32 k
+al final decidemos un robot cosechador con una camera que gire con un sevomotor 360 para que analize el entorno saque con un braso el cultivo lo lleve a una caja que lleva y cuando se llene vuelve deja el cultivo y vuelva trabajar
+con un bateria tipo lipo de 7.5 Voltias 3 Amperios 
+Falta esquematico se hace la siguiente secion
+
+Creation_International_YIRC_"="&_28_02
+objetivos:1 plantear el robot, 2 hacer esquematica ,3 lista de materiales
+Un dron recojedor de basura que vaya por los parques visualisando con esp cam  si hay basura baja y recoje la basura con unas pinsas dentro de la caja se recoje la basura se cierra la caja
+busca el basurero mas cercano lo abre con un servo y se va necesitando:
+- un procesador indicado para hacer de la mejor manera la tarea
+- una caja para que migajas o la basura se salgan
+-una pinsa que recoja la basura 
+- volar
+ahora se hara el esquematico que estara en la misma carpeta
+EESPACIO DE COMENTARIO:
+
+consulta_2026:_28_02
+el motorreductor enocoder
