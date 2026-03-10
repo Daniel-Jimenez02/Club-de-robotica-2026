@@ -1,8 +1,11 @@
 Cronograma de eventos (Medellín) y sus categorías
+
 Solo eventos y categorías (cuadro resumen)
+
 Fecha	Evento (Ciudad/Sede)	Categorías / Retos
-28 Mar 2026	IYRC Colombia – Medellín (EAFIT)	Mid (10–13): Road Challenge, Sumo (teleoperado), Creation · Senior (14–17): Sumo autónomo, Save the Forest, Creation · Junior (7–9): Bowling, Road Challenge Jr, etc. [edubotica.com.co]
+11 abril 2026	IYRC Colombia – Medellín (EAFIT)	Mid (10–13): Road Challenge, Sumo (teleoperado), Creation · Senior (14–17): Sumo autónomo, Save the Forest, Creation · Junior (7–9): Bowling, Road Challenge Jr, etc. [edubotica.com.co]
 23 May 2026	ROBOJAM Nations – Medellín (The Columbus School)	Abierto (todas las edades): Skill Drive, BumperBot, Bristle Race, StackIN, Path Attack JR/PRO, CrossBot, Disk Derby. Registro cierra 24 Abr 2026. [robojam.live]
 26 Sep 2026	ROBOJAM Game On – Medellín	Programa educativo/retos: Bristle Race, Biped Race, Path Attack, Skill Drive, StackIN, Bumper Bot, Path Attack Pro (formato local). [robojam.live], [maex.com.co]
 verificar inscripciones y horarios 4–6 semanas antes de cada fecha.
+
 
