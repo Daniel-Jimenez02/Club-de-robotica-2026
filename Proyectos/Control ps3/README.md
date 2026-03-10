@@ -1,4 +1,5 @@
 Para usar esta libreria es necesario que la version instalada de las ESP32 en el IDE arduino sea menor a la versión 1.0.6
+descargar la libreria y descomprimirla en la carpeta Documents\Arduino\libraries
 
 Detalles del control:
 https://acebott.com/es/stem-kits/explorer-series/wireless-controller-bluetooth-controller-expansion-pack-for-esp32/
