@@ -1,7 +1,11 @@
 Bitacora de Victoria Fecha:21/2/2026
+
 Objetivo del reto:crear un robot sumocon legos para competir la proxima semana
+
 Esquema/diagrama: no aplica para lego
-Código:proyectos 
+
+Código:proyectos
+
 Métricas clave:no aplica para lego
 Lecciones aprendidas y siguiente ajustes:hoy apremdimos a crear un robot con modificaciones,el codigo esta casoi listo,el sensor ultrasonido no funciona entonces debemos hacer adaptaciones para que funcione solo con sensores de presion,es es decirla la proxima clase hay que terminar el codigoy terminar el robot 
 
