@@ -31,3 +31,24 @@ esp 32 con antena para conectar el conctando la camara sp 32 k al final decidemo
 sevomotor 360 para que analize el entorno saque con un braso el cultivo lo lleve a una caja que lleva y cuando se llene vuelve deja el 
 cultivo y vuelva trabajar con un bateria tipo lipo de 7.5 Voltias 3 Amperios Falta esquematico se hace la siguiente secion
 
+lista de materiales del cultivo: 
+
+robot:
+4 motores dc
+2 puente H
+1 servo
+esp32 wroom + shield
+sensor ultrasonico de liquidos
+bateria 7 V lipo
+camara compatible con microcontroladores
+impresora 3D
+interruptor de switch
+modulo sim card
+pesticida
+
+cultivo (lechuga):
+botellas de plastico grandes
+4 bombas de agua con sus tuvos
+un eduardo uno
+lechuga
+algodon
