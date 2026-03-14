@@ -30,3 +30,6 @@ Esquema/diagrama: capturas de esquematicos/Dante/termometro dht11, termometro dh
 Código: proyectos/Termometro Dante
 Métricas clave: 
 Lecciones aprendidas y siguiente ajuste:
+referencias: https://programarfacil.com/blog/arduino-blog/sensor-dht11-temperatura-humedad-arduino/ 
+https://www.prometec.net/serial-plotter/
+https://www.instructables.com/Ultimate-Guide-to-Adruino-Serial-Plotter/
