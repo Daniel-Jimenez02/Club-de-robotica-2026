@@ -26,7 +26,8 @@ Lecciones aprendidas y siguiente ajuste:
 
 Bitacora de Dante    Fecha: 14/3/2026
 Objetivo del reto: construir un termometro funcional con arduino y sensor dht11 que muestre  la temperatura y un grafico en el monitor serial
-Esquema/diagrama: 
+Esquema/diagrama:  ![Image Alt](image_url)
+ ![Image Alt](image_url)
 Código: proyectos/Termometro Dante
 Métricas clave: 
 Lecciones aprendidas y siguiente ajuste:
