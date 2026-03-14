@@ -12,4 +12,103 @@ OBJETOS:
 Rueda giratoria
 Ruedas
 DIAGRAMA DE CIRCUITO:
-https://private-user-images.githubusercontent.com/206945499/557004600-375fd555-426a-46d1-9e05-8d340d934e7b.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzM1MDE3MTUsIm5iZiI6MTc3MzUwMTQxNSwicGF0aCI6Ii8yMDY5NDU0OTkvNTU3MDA0NjAwLTM3NWZkNTU1LTQyNmEtNDZkMS05ZTA1LThkMzQwZDkzNGU3Yi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMzE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDMxNFQxNTE2NTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02YzEwZmNlN2M4YzgyODQ1MTY5YTQ5YzI5MjQ5NTMxYThhM2M2OThiYmJhZDRlNTE2NDg5YWVkOTA4ZjA2MjM4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.PRRq-6W0IB9Mak8xJeSIFlpByaD5MTvFJ2-tFtt-d90
+No se 
+CODIGO:
+// Pinos del puente H #definir IN1 8 #definir IN2 9 #definir ENA 10 #definir ENA2 11 // segundo ENA
+
+// Codificador #define encoderA 2 #define encoderB 3
+
+pulsos largos volátiles = 0;
+
+int velocidad = 200;
+
+// Ajustar según tu motor float pulsos_por_vuelta = 330;
+
+// Radio de la rueda en cm float radio_rueda = 3.0;
+
+configuración vacía() {
+
+Serie.begin(9600);
+
+pinMode(IN1, SALIDA); pinMode(IN2, SALIDA); pinMode(ENA, SALIDA); pinMode(ENA2, SALIDA);
+
+pinMode(codificadorA, INPUT); pinMode(codificadorB, INPUT);
+
+attachInterrupt(digitalPinToInterrupt(encoderA), contar, RISING);
+
+Serial.println("Sistema listo"); Serial.println("Comandos:"); Serial.println("F velocidad → Adelante"); Serial.println("B velocidad → Atras"); Serial.println("S → Detener"); Serial.println("R → Restablecer codificador"); Serial.println("D → Distancia"); Serial.println("V → Vueltas");
+
+}
+
+void loop() {
+
+si (Serial.disponible()) {
+
+String comando = Serial.readStringUntil('\n');
+
+char orden = comando.charAt(0);
+
+int vel = comando.substring(1).toInt();
+
+interruptor (orden) {
+
+caso 'F': adelante(vel); Serial.println("Motor adelante"); romper;
+
+caso 'B': atras(vel); Serial.println("Atras del motor"); romper;
+
+caso 'S': parar(); Serial.println("Motor detenido"); romper;
+
+caso 'R': pulsos = 0; Serial.println("Codificador reiniciado"); romper;
+
+case 'V': mostrarVueltas(); romper;
+
+case 'D': mostrarDistancia(); romper;
+
+}
+
+}
+
+}
+
+// Interrupción del codificador void contar() {
+
+if (digitalRead(encoderB) == HIGH) pulsos++; else pulsos--;
+
+}
+
+// Motor adelante void adelante(int vel) {
+
+escritura digital (IN1, ALTA); escritura digital (IN2, BAJO); escrituraanalógica(ENA, vel); escrituraanalógica(ENA2, vel);
+
+}
+
+// Motor atrás void atras(int vel) {
+
+escritura digital (IN1, BAJO); escritura digital (IN2, ALTA); escrituraanalógica(ENA, vel); escrituraanalógica(ENA2, vel);
+
+}
+
+// Detener void parar() {
+
+escritura digital (IN1, BAJO); escritura digital (IN2, BAJO); escritura analógica(ENA, 0); escritura analógica(ENA2, 0);
+
+}
+
+// Mostrar vueltas void mostrarVueltas() {
+
+float vueltas = pulsos / pulsos_por_vuelta;
+
+Serial.print("Vueltas: "); Serial.println(vueltas);
+
+}
+
+// Mostrar distancia void mostrarDistancia() {
+
+float vueltas = pulsos / pulsos_por_vuelta;
+
+float distancia = vueltas * 2 * 3.1416 * radio_rueda;
+
+Serial.print("Distancia recorrida (cm): "); Serial.println(distancia);
+
+}
+DISEÑO 3D:
