@@ -1,1 +1,14 @@
-
+COMPETENCIA BUMPERBOT EVOLUTION
+Se debe crear y programar un robot que retire ciertos obstáculos(10 Vasos) de una pista, en un tiempo de 2 minutos, sin salirse de la pista mientras lo hace.
+MATERIALES ELECTRONICA:
+Puente H
+Bateria 
+Sensores infrarrojo
+Motores
+Switch electrico
+jumper wires
+Ultrasonido 
+OBJETOS:
+Rueda giratoria
+Ruedas
+DIAGRAMA DE CIRCUITO:
