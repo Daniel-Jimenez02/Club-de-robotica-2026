@@ -30,7 +30,5 @@ Materiales
 1.arduino
 2.censor ultra sonido
 3.carton(decoracion)
-cables macho embra,macho macho y embra embra
-4.puenete h
-5.destornillador
+cables macho embra y embra ebmbra
 
