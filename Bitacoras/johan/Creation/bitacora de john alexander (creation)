@@ -31,16 +31,18 @@ esp 32 con antena para conectar el conctando la camara sp 32 k al final decidemo
 sevomotor 360 para que analize el entorno saque con un braso el cultivo lo lleve a una caja que lleva y cuando se llene vuelve deja el 
 cultivo y vuelva trabajar con un bateria tipo lipo de 7.5 Voltias 3 Amperios Falta esquematico se hace la siguiente secion
 
-proyecto definido:cultivo hidroponico
+proyecto definido: cultivo hidroponico
 
 investigaciones:
 como funciona el sistema de bombeo en un cultivo hidroponico
 como fabricar un cultivo hidroponico
 como automatizar un cultivo hidroponico
 se pueden usar pesticidas en un cultivo hidroponico
+como se llaman los cultivadores de cultivo hidroponico
+como seria un impacto a nivel nacional de la automatizacion del cultivo hidroponico
 
-objetivo: automatizar el sistema de monitoreo de bombeo en un cultivo hidroponico y automatizar el el monitoreo de plagas o insectos usando inteligencia artificial
-lista de materiales del cultivo: 
+objetivos: reducir los dolores de cabeza al mantener las plantas manualmente, implementar mas la inteligencia artificial en el tema agricola, integrarnos mas en el tema de la automatizacion
+impacto: grande ya que en colombia el metodo de hidroponia se utiliza mucho en la produccion agricola para el cultivo de: flores, vegetales, frutas, ETC
 
 robot:
 4 motores dc
