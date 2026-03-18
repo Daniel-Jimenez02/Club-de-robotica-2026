@@ -47,11 +47,15 @@ como funciona la electroconductividad (nutrientes)
 comom intectar los nutrientes que necesita un cultivo hidroponico
 
 objetivos: reducir los dolores de cabeza al mantener las plantas manualmente, implementar mas la inteligencia artificial en el tema agricola, integrarnos mas en el tema de la automatizacion
+
 impacto: grande ya que en colombia el metodo de hidroponia se utiliza mucho en la produccion agricola para el cultivo de: flores, vegetales, frutas, ETC
+
 ODS impactados: ODS15: ayuda a automatizar y a mantener la biodiversidad de plantas en colombia para evitar la perdida de ellas. ODS12: mantiene una produccion de recursos estables y sostenibles para la comunidad. ODS2: garantiza el consumo de frutaas y vegetales para la nutricion.ODS7: asegura el uso de energias renovables para cuidar el plantea.
 
 que es un cultivo hidroponico: es un metodo de cultivo de plantas que no utiliza el suelo sustituyéndolo por una solución acuosa rica en nutrientes o sustratos inertes , Las raíces reciben agua, minerales y oxígeno directamente, logrando un crecimiento más rápido, mayor producción y ahorro de agua
+
 que cuidados necesita un cultivo hidroponico: control diario del PH, la electroconductividad de nutrientes, 6 horas de luz solar, uso de agua desmineralizada de lluvia de osmosis inversa, mantenimiento de temperatura fresca 17-22 grados centigrados, limpiiado de tuberias tubos y macetas, evitar la ploriferacion de algas bacterias y hongos que dañen las raices y obstruyan el sisitema, monitoreo de plagas(lo hace el robot).
-como ayuda ese proyecto en esos dos aspectos: con los sensores que implementa se encarga de monitorear la temperatura y humedad y hace un control de luces muy potentes para regularla o aunmentarla, la bomba de agua se encarga de mezclar esos nutrientes a cierta hora,
+
+como ayuda ese proyecto en esos dos aspectos: con los sensores que implementa se encarga de monitorear la temperatura y humedad y hace un control de luces muy potentes para regularla o aunmentarla, la bomba de agua se encarga de mezclar esos nutrientes a cierta hora, la camara y la IA integrada detecta plagas y rocia insecticida en el area afectada, manda mensajes sms sobre el estado de la planta y si esta lista para cosechar
 
 me falto esta clase definir: como ayuda mi proyecto en estos dos aspectos(pendiente a terminar en la casa)
