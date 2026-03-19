@@ -31,4 +31,4 @@ el motorreductor enocoder
 
 consulta_2026_16_03
 cultivo hidroponico: se necesita una especie de lechuga que pueda adaptarse al agua necesitando:
-nitrogeno(cascara de papaya) ,fosforo(cascara de platano),calcio(cascara de huevo),potasio(babanano tambien),almidon (cascara de papa).el proceso es fermendacion meter las cascaras en un frasco oscuro en un lugar oscura
+nitrogeno(cascara de papaya) ,fosforo(cascara de platano),calcio(cascara de huevo),potasio(babanano tambien),almidon (cascara de papa)tambien cascara de tomate.el proceso es fermendacion meter las cascaras en un frasco oscuro en un lugar oscura
