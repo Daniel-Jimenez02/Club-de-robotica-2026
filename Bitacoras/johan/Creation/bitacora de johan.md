@@ -32,3 +32,18 @@ el motorreductor enocoder
 consulta_2026_16_03
 cultivo hidroponico: se necesita una especie de lechuga que pueda adaptarse al agua necesitando:
 nitrogeno(cascara de papaya) ,fosforo(cascara de platano),calcio(cascara de huevo),potasio(babanano tambien),almidon (cascara de papa)tambien cascara de tomate.el proceso es fermendacion meter las cascaras en un frasco oscuro en un lugar oscura
+
+Creation_international_YRC_19/03/2026
+proyecto en definicion: cultivo hidroponico
+objetivos: reducir los dolores mentales al mantener las plantas con manual, implementar mas la inteligencia artificial en el tema agricola del contexto colombiano, integrarnos mas en el tema de la automatizacion autonoma
+
+impacto: exacto ya que en colombia el metodo de hidroponia se utiliza mucho en la produccion agricola para el cultivo de: flores, vegetales, frutas, ETC como una ves que estaba de mision en un lud¡gar de monjas que hicieron un cultivo como este 
+
+ODS impactados: ODS3: produce una cantidad de plantas, frutas y vegetales para grantizar el consumo de plantas saludables y la lechuga es saloudable  ODS12: mantiene una produccion de recursos estables y sostenibles para la comunidad. ODS2: produce una cantidad considerable de alimentos para garantizar que no halla hambre .ODS7: asegura el uso de energias renovables para cuidar el plantea.
+
+que es un cultivo hidroponico: es un metodo de cultivo de plantas que no utiliza el suelo sustituyéndolo por una solución acuosa rica en nutrientes o sustratos inertes , Las raíces reciben agua, minerales y oxígeno directamente, logrando un crecimiento más rápido, mayor producción y ahorro de agua
+
+que cuidados necesita un cultivo hidroponico: control diario del PH, la electroconductividad de nutrientes, 6 horas de luz solar, uso de agua desmineralizada de lluvia de osmosis inversa, mantenimiento de temperatura fresca 17-22 grados centigrados, limpiado de tuberias tubos y macetas, evitar la ploriferacion de algas bacterias y hongos que dañen las raices y obstruyan el sisitema, monitoreo de plagas(lo hace el robot).
+
+como ayuda ese proyecto en los cuidados: se va a encargar de bombear los nutrientes a cierta hora, va amonitorear las plantas en vusca de plagas y va desinfectar la parte afectada, va a mandar mensaje cuando 
+la planta este lista para cosechar,  va a tener un sistema que envie mensajes sms para avisar el crecimiento de la planta,
