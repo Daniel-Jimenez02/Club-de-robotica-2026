@@ -57,8 +57,7 @@ que es un cultivo hidroponico: es un metodo de cultivo de plantas que no utiliza
 que cuidados necesita un cultivo hidroponico:  6 horas de luz solar, mantenimiento de temperatura fresca 17-22 grados centigrados, evitar la ploriferacion de algas bacterias y hongos que dañen las raices y obstruyan el sisitema, monitoreo de plagas(lo hace el robot).
 
 como ayuda ese proyecto en los cuidados: se va a encargar de bombear los nutrientes a cierta hora, va amonitorear las plantas en vusca de plagas y va desinfectar la parte afectada, va a mandar mensaje por wasapp cuando 
-la planta este lista para cosechar,  va a tener un sistema que envie mensajes sms para avisar el crecimiento de la planta, 
-
+la planta este lista para cosechar, 
 como se hace: se utiliza una soluciond de agua con diferentes nutrientes insertandolos en un tubo donde se encuentran las raices de la planta, la planta pasa por una minired lo suficientemente ancha para que las raices pasen al tubo donde esta la solucion de nutrientes.
 
 se cambia el agua y nutrientes entre los 30-45 dias
