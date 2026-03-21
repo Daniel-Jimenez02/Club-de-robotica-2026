@@ -1,16 +1,16 @@
 1. COMPETENCIA BUMPERBOT EVOLUTION
   Se debe crear y programar un robot que retire ciertos obstáculos(10 Vasos) de una pista, en un tiempo de 2 minutos, sin salirse de la pista mientras lo hace.
 2. MATERIALES ELECTRONICA:
-  1 Puente H
-  1 Bateria lipo 
-  4 Sensores infrarrojo
-  2 Motores
-  1 Switch electrico
-  jumper wires
-  1 Ultrasonido 
+ - 1 Puente H
+ -1 Bateria lipo
+ -4 Sensores infrarrojo
+ -2 Motores
+ -1 Switch electrico
+ -jumper wires
+ -1 Ultrasonido 
 3. OBJETOS:
-  1 Rueda giratoria
-  2 Ruedas
+ - 1 Rueda giratoria
+-  2 Ruedas
 4. DIAGRAMA DE CIRCUITO:
  <img width="2664" height="2325" alt="EPM_bb" src="https://github.com/user-attachments/assets/375fd555-426a-46d1-9e05-8d340d934e7b" />
 
@@ -107,6 +107,7 @@
   // Mostrar distancia void mostrarDistancia() {
   
   float vueltas = pulsos / pulsos_por_vuelta;
+
   
   float distancia = vueltas * 2 * 3.1416 * radio_rueda;
   
@@ -114,3 +115,4 @@
   
   }
 DISEÑO 3D:
+
