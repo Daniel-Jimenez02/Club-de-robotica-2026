@@ -17,6 +17,8 @@ Materiales:
   - Rueda giratoria
   - Ruedas
   <img width="2664" height="2325" alt="EPM_bb" src="https://github.com/user-attachments/assets/375fd555-426a-46d1-9e05-8d340d934e7b" />
+  <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/df6ef289-3a2d-48ac-b9e9-f58c74670a5b" />
+
 
 3.
 // Pines del puente H
