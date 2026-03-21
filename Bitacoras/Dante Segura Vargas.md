@@ -36,7 +36,7 @@ https://www.instructables.com/Ultimate-Guide-to-Adruino-Serial-Plotter/
 
 
 Bitacora de Dante    Fecha: 21/3/2026
-Objetivo del reto: elegir un reto para participar en robojam y cuadrar los equipos
+Objetivo del reto: elegir un reto para participar en robojam y cuadrar los equipos(escogi el reto stackin y por ahora estoy solo)
 Esquema/diagrama: no aplica aun
 Código: no aplica aun
 Métricas clave: 100x70 cm pista, 20x14 zonas de descarga(4) una en cada esquina y paredes de 1cm de grosor y 10cm de altura, 10 cubos de 5x5x5cm de 100gr de peso de los cuales hay 2 dorados, 4 azules y 4 naranjas, cada cubo de colores vale 1 punto y los dorados valen 5 puntos cuando estan fuera de las zonas de descarga, cuando estan en las zonas de descarga valen 5 puntos los de colores si estan en el color contrario y si estan en su mismo color valen 10, los dorados valen 20 puntos, si hay mas de 5 cubos en una zona de descarga se cuantan solo los 5 de menor valor y si hay 2 dorados en la misma canasta se anula el segundo cubo dorado y si se apilan los cubos valen mas, en nivel 2 se multiplica x2, en el nivel 3 se multiplica x3, en el 4 se multiplica x4 y en el 5 se multiplica x5 el puntaje que hubiera dado el cubo en nivel 1
