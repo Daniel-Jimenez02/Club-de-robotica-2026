@@ -21,3 +21,6 @@ Esquema/Diagrama: no aplica para lego
 codigo:proyectos 
 Metricas Clave: no aplioca para lego 
 Lecciones Aprendidas y siguiente ajuste: 
+
+
+bitacora 
