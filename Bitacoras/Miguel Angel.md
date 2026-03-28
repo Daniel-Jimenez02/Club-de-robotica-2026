@@ -18,9 +18,24 @@ Lecciones Aprendidas y siguiente ajuste: aprendimos a programar y a ahcer mas gr
 Bitacora Miguel            Fecha:7/2/2026
 Objectivo del reto: competir y ganar la competencia interna de sumo lego
 Esquema/Diagrama: no aplica para lego 
+
 codigo:proyectos 
 Metricas Clave: no aplioca para lego 
 Lecciones Aprendidas y siguiente ajuste: 
+
+Bitácora del 21 de marzo de 2026
+Objeetivo: lograr desarrollar las competencias necesarias para ganar el torneo de Robot Jam en la categoría de stacking
+Materiales:
+Son 2  motores 
+2 llantas grandes y 1 giratoria
+ESP32
+Cables macho hembra
+Engranajes 
+Tornillos 
+Servomotores
+Control inalambrico
+Garra tipo pinza impreso en 3d 
+Chasis impreso en 3d
 
 
 bitacora 
