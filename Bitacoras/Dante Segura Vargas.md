@@ -58,7 +58,7 @@ Lista de materiales: 1 esp32 38 pines, puente h l298n, 2 servos sg90 o mg90s, un
 
 Bitacora de Dante    Fecha: 28/mar/2026
 Objetivo del reto: hacer el diseño y el esquematico para stackin en robojam
-Esquema/diagrama: 
-Código: 
-Métricas clave: 
+Esquema/diagrama: capturas de esquematicos/Dante/Robot stackin robojam mayo 2026.png
+Código: todavia no
+Métricas clave: no se
 Lecciones aprendidas y siguiente ajuste:
