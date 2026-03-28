@@ -1,4 +1,5 @@
 Nombre del equipo: Robojammers
+Integrantes: Victoria Ciro Gallego, Manuela Salazar, Angelica Bolivar
 Categoria: Torneo Robojam Reto Skill Drive
 Materiales: Chasis (dos ruedas con motor independiente y una rueda loca, Arduino (Uno o Nano), Un puente H (como el L298N o L293D), Un módulo Bluetooth (HC-05/HC-06),Portabaterias, 2 Baterias de 6v, cables conectores macho hembra y hembra macho.
 
