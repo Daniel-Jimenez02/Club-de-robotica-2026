@@ -1,28 +1,24 @@
-Bitacora de Victoria Fecha:21/2/2026
+Nombre del equipo: Robojammers
+Integrantes: Victoria Ciro Gallego, Manuela Salazar, Angelica Bolivar
+Categoria: Torneo Robojam Reto Skill Drive
+Materiales: Chasis (dos ruedas con motor independiente y una rueda loca, Arduino (Uno o Nano), Un puente H (como el L298N o L293D), Un módulo Bluetooth (HC-05/HC-06),Portabaterias, 2 Baterias de 6v, cables conectores macho hembra y hembra macho.
 
-Objetivo del reto:crear un robot sumocon legos para competir la proxima semana
-
-Esquema/diagrama: no aplica para lego
-
-Código:proyectos
-
-Métricas clave:no aplica para lego
-Lecciones aprendidas y siguiente ajustes:hoy apremdimos a crear un robot con modificaciones,el codigo esta casoi listo,el sensor ultrasonido no funciona entonces debemos hacer adaptaciones para que funcione solo con sensores de presion,es es decirla la proxima clase hay que terminar el codigoy terminar el robot 
+Aplicar conocimiento en codificacion, Demostrar nuestros conocimientos en codigo arduino y construir Robot para competencia RobotJam, Skilldrive, Aprender a programar para conexion bluetooth 
 
 
 
-bictacora de victoria  fecha:28/2/2026
-objetivo del reto:mejorar el robot smo para competir el dia 7 de marzo en la conpetencia interna de sumo 
-esquema/diagrama:no implica para lego
-codigo:proyectos
-metricas clave:no implica para lego 
-leccioes aprendidas y siguientes ajustes: aprendimos a progamar y hacer mas grande y ponerle al robot cosas que afectan a los demas,el sigiente ajuste seria competir ,ya que no creo que necesite mas modificaciones mayores 
+Esquema/diagrama (foto o dibujo simple).
+cuadro de 20x20 cm, altura sin limites. Colores que contrasten para mejor visibilidad. El robot no puede usar sensores ni pinzas para guiarse ni sostener el objeto a empujar, las guías que pueda usar solo pueden ser de 3,5 cm de largo. Tiene que ser abierto y dejar visibilidad para el objeto, Las guías del robot deben cubrir la mitad del objeto. 
+<img width="727" height="454" alt="esquema skill drive" src="https://github.com/user-attachments/assets/fa63d22b-5dea-408e-b842-bd753fd5efe2" />
 
 
+Código (versión y cambios): qué y por qué.
+Declarar motores y conexión bluetooth: conexión constante y fuerte con el control remoto o mando físico. posible desde celular o mando especifico (conexión wifi, infrarojo) 
+ velocidad, encedido y apagado.
+ 
+ Botón conectado a la bateria 
+ código: 
+ 
+métricas clave: tiempos, error, consistencia.
 
-bictacora de victoria fecha:7/3/2026
-objetivo del reto:compartir y ganar la competencia interna de sumo lego 
-esquema/diagrama:no implica para legos 
-codigo :proyectos 
-metricas clave:no implica para lego
-lecciones aprendidas y sigientes ajustes:
+Lecciones aprendidas y siguiente ajuste.
