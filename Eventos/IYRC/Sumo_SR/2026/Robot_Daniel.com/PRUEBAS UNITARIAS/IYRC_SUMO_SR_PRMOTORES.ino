@@ -7,14 +7,16 @@ int M1_A = 25;
 int M1_B = 33;
 int M2_A = 32;
 int M2_B = 35;
-int PWM_1 = 26;
-int PWM_2 = 34;
+int ENA = 26;
+int ENB = 34;
 //------------------------------------------CONFIGURACIÓN--------------------------------------------------
 void setup() {
 pinMode(M1_A, OUTPUT);
 pinMode(M1_B, OUTPUT);
 pinMode(M2_A, OUTPUT);
 pinMode(M2_B, OUTPUT);
+pinMode(PWM_1, OUTPUT);
+pinMode(PWM_2, OUTPUT);
 }
 
 
