@@ -1,3 +1,7 @@
+Nombre del equipo: Robojammers
+Categoria: Torneo Robojam Reto Skill Drive
+Materiales: Chasis (dos ruedas con motor independiente y una rueda loca, Arduino (Uno o Nano), Un puente H (como el L298N o L293D), Un módulo Bluetooth (HC-05/HC-06),Portabaterias, 2 Baterias de 6v, cables conectores macho hembra y hembra macho.
+
 Aplicar conocimiento en codificacion, Demostrar nuestros conocimientos en codigo arduino y construir Robot para competencia RobotJam, Skilldrive, Aprender a programar para conexion bluetooth 
 
 
