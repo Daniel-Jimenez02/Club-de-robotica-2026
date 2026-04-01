@@ -1,19 +1,13 @@
 lista de materiales (robot)
-
-~x1 ESP32: el cerebro del circuito y para la inteligencia artificial
-~x1 bomba de agua: es el modulo que se encarga de los lixiviados
-~x1 modulo de camara: es el que revisa los hongos y toma fotos del progreso del crecimiento de las plantas
-~x1 RTC: para saber la hora que se hecha los lixiviados
-~x1 servomotor: para que la IA pueda mover la camara y hubicar una posicion buena para la foto
-
-
-lista de materiales (centro de hidroponia)
-
-~x1 bomba de agua: para bombear constantemente los nutrientes
-~ lixiviados (calculando el tamaño del tanque): para que sea bombeado al tanque
-~ nutrientes : listos para hechar al tanque de agua
+1:7805 5v
+1 ESP32 cam: el cerebro del circuito ;para la inteligencia artificial y toma fotos del progreso del crecimiento de las plantas
+2 bomba de agua: es el modulo que se encarga de los lixiviados y el otro de hacer circular el agua
+1 RTC: para saber la hora que se hecha los lixiviados
+~x1 servomotor: para que la IA pueda mover la camara y hubicar una posicion buena para la foto (en discución)
+lixiviados (en forma liquida): para que sea bombeado al tanque (los consige johan felipes epinosa Graciano)
+nutrientes : listos para hechar al tanque de agua
 
 lista de materiales (alimentacion general)
 
 bateria 14.8 V 53.2 WH
-paneles solares(hay que hacer el calculo de cuantos se nescesitan)
+paneles solares(hay que hacer el calculo de cuantos se nescesitan lo hace john alexander)
