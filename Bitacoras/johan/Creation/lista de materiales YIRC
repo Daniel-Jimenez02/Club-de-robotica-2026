@@ -1,5 +1,5 @@
 lista de materiales (robot)
-1:LM2596 (regulador de voltage) 5v
+1:LM2596 (regulador de voltage) o el 7805 pero se nescecitarian 2 de destps modulos de 5 v
 1 ESP32 cam: el cerebro del circuito ;para la inteligencia artificial y toma fotos del progreso del crecimiento de las plantas
 2 bomba de agua: es el modulo que se encarga de los lixiviados y el otro de hacer circular el agua
 1(opcionel pero si se puede se consige) RTC: para saber la hora que se hecha los lixiviados o arriesgarse que el arduino no se reinicie
