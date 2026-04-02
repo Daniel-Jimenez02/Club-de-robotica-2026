@@ -1,12 +1,19 @@
-escena 1: presentacion de nombres y explicacion de que es un cultivo hidroponico
+escena 1: presentacion de nombres y explicacion de que es un cultivo hidroponico    //comentario: mi nombre es j o h a n no yoan no joan aunque se escribe johan se dice joan solo es una aclaracion
 
 
-YOAN:"Have you ever wondered if plants can grow without a single handful of soil? Welcome to the world of hydroponics."
+JOHAN:"Have you ever question if plants can grow without a any dirt? I am Johan, and together with John we will present the world of hydroponics."
 
-JHON:"In a hydroponic system, soil is replaced by a mineral-rich water solution. This allows plants to get their nutrients directly through their roots, with zero effort."
+JHON:"In a hydroponic system, soil is replaced by a nutrient-rich water solution. This allows plants to get their nutrients directly through their roots, with maximun efficiency."                                    //John caundo lo ibamos a hacer dijistes y  nos quedamos una hora convenciondote que el agua no es desmineralizada es normal y ahora la pone minerales lo sacastes de la ia seguro
 
 JHON:"The results? It uses up to 90% less water than traditional farming, takes up less space, and helps crops grow significantly faster."
 
-YOAN:"From vertical farms to your own kitchen, hydroponics is the future of sustainable, fresh food. Efficient, clean, and incredibly smart."
+JOHAN:"From hydroponic farms for your kitchen, hydroponics is the future of sustainable, fresh food. Efficient, clean, and more smart."                                                         
+                                                                                                                                                                                                               // john cuando mire esto no nos presentamos y la escena dice "presentacion de nombres
+escena 2: explicacion de como funciona el proyecto
 
-escena 2: explicacion de como funciona el protecto
+JOHAN:this is tamachuga (entra al chat con la ia) (pone:"how is my plant) (muestra como la ia le responde y muestra la planta)
+
+JOHN: (cambia la camara al cultivo)
+
+escena 3: tutorial for build a hidroponic farming
+JOHN: the hidroponic sistem is very easy you need a bottle 3L,cups, soldering iron
