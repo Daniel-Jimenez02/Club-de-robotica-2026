@@ -1,0 +1,175 @@
+. Configuración del Proyecto (platformio.ini)
+
+Copia esto en tu archivo de configuración para que VS Code descargue automáticamente las librerías necesarias:
+Ini, TOML
+
+[env:esp32cam]
+platform = espressif32
+board = esp32cam
+framework = arduino
+monitor_speed = 115200
+lib_deps =
+    mobizt/ESP Mail Client @ ^3.4.19
+    adafruit/RTClib @ ^2.1.3
+    adafruit/Adafruit BusIO @ ^1.14.5
+
+  #include <Arduino.h>
+#include "esp_camera.h"
+#include <WiFi.h>
+#include <ESP_Mail_Client.h>
+#include <RTClib.h>
+#include <Wire.h>
+
+// --- Ajustes de Usuario ---
+const char* WIFI_SSID = "TU_WIFI";
+const char* WIFI_PASS = "TU_PASSWORD";
+#define EMAIL_RECEPTOR "tu_correo@gmail.com"
+
+// --- Pines de Hardware ---
+const int PIN_LIXIVIADOS = 13;   // Bomba 1 (Nutrientes)
+const int PIN_CIRCULACION = 12; // Bomba 2 (Agua)
+const int PIN_BATERIA = 34;     // Lectura analógica del voltaje
+
+// --- Configuración Cámara (AI-Thinker) ---
+#define PWDN_GPIO_NUM 32
+#define RESET_GPIO_NUM -1
+#define XCLK_GPIO_NUM 0
+#define SIOD_GPIO_NUM 26
+#define SIOC_GPIO_NUM 27
+#define Y9_GPIO_NUM 35
+#define Y8_GPIO_NUM 34
+#define Y7_GPIO_NUM 39
+#define Y6_GPIO_NUM 36
+#define Y5_GPIO_NUM 21
+#define Y4_GPIO_NUM 19
+#define Y3_GPIO_NUM 18
+#define Y2_GPIO_NUM 5
+#define VSYNC_GPIO_NUM 25
+#define HREF_GPIO_NUM 23
+#define PCLK_GPIO_NUM 22
+
+RTC_DS3231 rtc;
+SMTPSession smtp;
+
+// Funciones auxiliares
+void enviarFoto(String asunto);
+void inicializarCamara();
+
+void setup() {
+    Serial.begin(115200);
+    
+    pinMode(PIN_LIXIVIADOS, OUTPUT);
+    pinMode(PIN_CIRCULACION, OUTPUT);
+    digitalWrite(PIN_LIXIVIADOS, LOW);
+    digitalWrite(PIN_CIRCULACION, LOW);
+
+    // I2C para RTC (SDA: 15, SCL: 14)
+    Wire.begin(15, 14);
+    if (!rtc.begin()) Serial.println("Error: RTC no encontrado");
+
+    inicializarCamara();
+
+    WiFi.begin(WIFI_SSID, WIFI_PASS);
+    Serial.print("Conectando WiFi");
+    while (WiFi.status() != WL_CONNECTED) {
+        delay(500);
+        Serial.print(".");
+    }
+    Serial.println("\nWiFi Conectado");
+}
+
+void loop() {
+    DateTime ahora = rtc.now();
+
+    // 1. CONTROL DE LIXIVIADOS (Cada 5 días a las 7:00 AM)
+    if (ahora.day() % 5 == 0 && ahora.hour() == 7 && ahora.minute() == 0 && ahora.second() < 2) {
+        Serial.println("Aplicando lixiviados...");
+        digitalWrite(PIN_LIXIVIADOS, HIGH);
+        delay(10000); // 10 segundos de nutrientes
+        digitalWrite(PIN_LIXIVIADOS, LOW);
+        enviarFoto("Reporte Hidropónico: Lixiviados Aplicados");
+    }
+
+    // 2. FOTO DE CRECIMIENTO (Cada 10 días a las 12:00 PM)
+    if (ahora.day() % 10 == 0 && ahora.hour() == 12 && ahora.minute() == 0 && ahora.second() < 2) {
+        enviarFoto("Bitácora de Crecimiento - Seguimiento 10 días");
+    }
+
+    // 3. CIRCULACIÓN CONSTANTE (Con protección de batería)
+    // Lee el voltaje: 14.8V nominal, 12.8V mínima.
+    float lectura = analogRead(PIN_BATERIA) * (20.0 / 4095.0); // Calibrar según divisor
+    
+    if (lectura > 13.0) { 
+        // Si hay batería, circula 15 min cada hora
+        if (ahora.minute() < 15) digitalWrite(PIN_CIRCULACION, HIGH);
+        else digitalWrite(PIN_CIRCULACION, LOW);
+    } else {
+        // Modo ahorro extremo: Bomba apagada si la batería es baja
+        digitalWrite(PIN_CIRCULACION, LOW);
+    }
+
+    delay(1000); 
+}
+
+void inicializarCamara() {
+    camera_config_t config;
+    config.ledc_channel = LEDC_CHANNEL_0;
+    config.ledc_timer = LEDC_TIMER_0;
+    config.pin_d0 = Y2_GPIO_NUM;
+    config.pin_d1 = Y3_GPIO_NUM;
+    config.pin_d2 = Y4_GPIO_NUM;
+    config.pin_d3 = Y5_GPIO_NUM;
+    config.pin_d4 = Y6_GPIO_NUM;
+    config.pin_d5 = Y7_GPIO_NUM;
+    config.pin_d6 = Y8_GPIO_NUM;
+    config.pin_d7 = Y9_GPIO_NUM;
+    config.pin_xclk = XCLK_GPIO_NUM;
+    config.pin_pclk = PCLK_GPIO_NUM;
+    config.pin_vsync = VSYNC_GPIO_NUM;
+    config.pin_href = HREF_GPIO_NUM;
+    config.pin_sscb_sda = SIOD_GPIO_NUM;
+    config.pin_sscb_scl = SIOC_GPIO_NUM;
+    config.pin_pwdn = PWDN_GPIO_NUM;
+    config.pin_reset = RESET_GPIO_NUM;
+    config.xclk_freq_hz = 20000000;
+    config.pixel_format = PIXFORMAT_JPEG;
+    config.frame_size = FRAMESIZE_VGA;
+    config.jpeg_quality = 12;
+    config.fb_count = 1;
+
+    esp_err_t err = esp_camera_init(&config);
+    if (err != ESP_OK) Serial.println("Error cámara");
+}
+
+void enviarFoto(String asunto) {
+    camera_fb_t * fb = esp_camera_fb_get();
+    if(!fb) return;
+
+    // Aquí debes completar con tus credenciales de Gmail SMTP
+    // (Usa una "Contraseña de aplicación" generada en Google)
+    Session_Config config;
+    config.server.host_name = "smtp.gmail.com";
+    config.server.port = 465;
+    config.login.email = "tu_correo@gmail.com";
+    config.login.password = "tu_clave_app";
+
+    SMTP_Message message;
+    message.sender.name = "Robot Hidropónico";
+    message.sender.email = "tu_correo@gmail.com";
+    message.subject = asunto;
+    message.addRecipient("Admin", EMAIL_RECEPTOR);
+
+    SMTP_Attachment att;
+    att.descr.filename = "crecimiento.jpg";
+    att.descr.mime = "image/jpg";
+    att.blob.data = fb->buf;
+    att.blob.size = fb->len;
+    att.descr.content_encoding = "base64";
+    message.addAttachment(att);
+
+    if (!MailClient.sendMail(&smtp, &message)) {
+        Serial.println("Error enviando reporte");
+    }
+    
+    esp_camera_fb_return(fb);
+}
