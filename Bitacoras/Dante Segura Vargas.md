@@ -61,4 +61,11 @@ Objetivo del reto: hacer el diseño y el esquematico para stackin en robojam
 Esquema/diagrama: capturas de esquematicos/Dante/Robot stackin robojam mayo 2026.png
 Código: todavia no
 Métricas clave: no se
+Lecciones aprendidas y siguiente ajuste: Empece a construir el robot, aprendi a organizar los esquematicos en fritzing y la siguiente clase debo continuar con la construccion 
+
+Bitacora de Dante    Fecha: 11/abr/2026
+Objetivo del reto: terminar de construir la base del robot
+Esquema/diagrama: capturas de esquematicos/Dante/Robot stackin robojam mayo 2026.png
+Código: aun no
+Métricas clave: no se
 Lecciones aprendidas y siguiente ajuste:
