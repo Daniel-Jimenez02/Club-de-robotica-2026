@@ -11,3 +11,6 @@ Servomotores
 Control inalambrico
 Garra tipo pinza impreso en 3d 
 Chasis impreso en 3d
+
+Bitácora del 11 de abril de 2026
+Objetivo: Nuestro objetivo del dia es lograr avanzar lo más posible en nuestro robot para la competencia de Robot Jam en la categoría de stacking 
