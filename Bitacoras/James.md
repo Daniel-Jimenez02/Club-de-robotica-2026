@@ -21,11 +21,15 @@ Materiales:
 
 
 3.
-// Pines del puente H
+// Motor A
 #define IN1 8
 #define IN2 9
 #define ENA 10
-#define ENA2 11   // segundo ENA
+
+// Motor B
+#define IN3 6
+#define IN4 7
+#define ENA2 11   // segundo enable
 
 // Encoder
 #define encoderA 2
@@ -33,143 +37,133 @@ Materiales:
 
 volatile long pulsos = 0;
 
-int velocidad = 200;
-
-// Ajustar según tu motor
 float pulsos_por_vuelta = 330;
-
-// Radio de la rueda en cm
 float radio_rueda = 3.0;
 
 void setup() {
 
-Serial.begin(9600);
+  Serial.begin(9600);
 
-pinMode(IN1, OUTPUT);
-pinMode(IN2, OUTPUT);
-pinMode(ENA, OUTPUT);
-pinMode(ENA2, OUTPUT);
+  // Motor A
+  pinMode(IN1, OUTPUT);
+  pinMode(IN2, OUTPUT);
+  pinMode(ENA, OUTPUT);
 
-pinMode(encoderA, INPUT);
-pinMode(encoderB, INPUT);
+  // Motor B
+  pinMode(IN3, OUTPUT);
+  pinMode(IN4, OUTPUT);
+  pinMode(ENA2, OUTPUT);
 
-attachInterrupt(digitalPinToInterrupt(encoderA), contar, RISING);
+  // Encoder
+  pinMode(encoderA, INPUT);
+  pinMode(encoderB, INPUT);
 
-Serial.println("Sistema listo");
-Serial.println("Comandos:");
-Serial.println("F velocidad → Adelante");
-Serial.println("B velocidad → Atras");
-Serial.println("S → Stop");
-Serial.println("R → Reset encoder");
-Serial.println("D → Distancia");
-Serial.println("V → Vueltas");
+  attachInterrupt(digitalPinToInterrupt(encoderA), contar, RISING);
 
+  Serial.println("Sistema listo");
 }
 
 void loop() {
 
-if (Serial.available()) {
+  if (Serial.available()) {
 
-String comando = Serial.readStringUntil('\n');
+    String comando = Serial.readStringUntil('\n');
 
-char orden = comando.charAt(0);
+    char orden = comando.charAt(0);
+    int vel = comando.substring(1).toInt();
 
-int vel = comando.substring(1).toInt();
+    switch (orden) {
 
-switch (orden) {
+      case 'F':
+        adelante(vel);
+        Serial.println("Motores adelante");
+        break;
 
-case 'F':
-adelante(vel);
-Serial.println("Motor adelante");
-break;
+      case 'B':
+        atras(vel);
+        Serial.println("Motores atras");
+        break;
 
-case 'B':
-atras(vel);
-Serial.println("Motor atras");
-break;
+      case 'S':
+        parar();
+        Serial.println("Motores detenidos");
+        break;
 
-case 'S':
-parar();
-Serial.println("Motor detenido");
-break;
+      case 'R':
+        pulsos = 0;
+        Serial.println("Encoder reiniciado");
+        break;
 
-case 'R':
-pulsos = 0;
-Serial.println("Encoder reiniciado");
-break;
+      case 'V':
+        mostrarVueltas();
+        break;
 
-case 'V':
-mostrarVueltas();
-break;
-
-case 'D':
-mostrarDistancia();
-break;
-
+      case 'D':
+        mostrarDistancia();
+        break;
+    }
+  }
 }
 
-}
-
-}
-
-// Interrupción del encoder
+// Encoder
 void contar() {
-
-if (digitalRead(encoderB) == HIGH)
-pulsos++;
-else
-pulsos--;
-
+  if (digitalRead(encoderB) == HIGH)
+    pulsos++;
+  else
+    pulsos--;
 }
 
-// Motor adelante
+// Adelante
 void adelante(int vel) {
 
-digitalWrite(IN1, HIGH);
-digitalWrite(IN2, LOW);
-analogWrite(ENA, vel);
-analogWrite(ENA2, vel);
+  // Motor A
+  digitalWrite(IN1, HIGH);
+  digitalWrite(IN2, LOW);
+  analogWrite(ENA, vel);
 
+  // Motor B
+  digitalWrite(IN3, HIGH);
+  digitalWrite(IN4, LOW);
+  analogWrite(ENA2, vel);
 }
 
-// Motor atrás
+// Atrás
 void atras(int vel) {
 
-digitalWrite(IN1, LOW);
-digitalWrite(IN2, HIGH);
-analogWrite(ENA, vel);
-analogWrite(ENA2, vel);
+  // Motor A
+  digitalWrite(IN1, LOW);
+  digitalWrite(IN2, HIGH);
+  analogWrite(ENA, vel);
 
+  // Motor B
+  digitalWrite(IN3, LOW);
+  digitalWrite(IN4, HIGH);
+  analogWrite(ENA2, vel);
 }
 
 // Stop
 void parar() {
 
-digitalWrite(IN1, LOW);
-digitalWrite(IN2, LOW);
-analogWrite(ENA, 0);
-analogWrite(ENA2, 0);
+  digitalWrite(IN1, LOW);
+  digitalWrite(IN2, LOW);
+  analogWrite(ENA, 0);
 
+  digitalWrite(IN3, LOW);
+  digitalWrite(IN4, LOW);
+  analogWrite(ENA2, 0);
 }
 
-// Mostrar vueltas
+// Vueltas
 void mostrarVueltas() {
-
-float vueltas = pulsos / pulsos_por_vuelta;
-
-Serial.print("Vueltas: ");
-Serial.println(vueltas);
-
+  float vueltas = pulsos / pulsos_por_vuelta;
+  Serial.print("Vueltas: ");
+  Serial.println(vueltas);
 }
 
-// Mostrar distancia
+// Distancia
 void mostrarDistancia() {
-
-float vueltas = pulsos / pulsos_por_vuelta;
-
-float distancia = vueltas * 2 * 3.1416 * radio_rueda;
-
-Serial.print("Distancia recorrida (cm): ");
-Serial.println(distancia);
-
+  float vueltas = pulsos / pulsos_por_vuelta;
+  float distancia = vueltas * 2 * 3.1416 * radio_rueda;
+  Serial.print("Distancia (cm): ");
+  Serial.println(distancia);
 }
