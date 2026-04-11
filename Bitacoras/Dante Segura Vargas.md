@@ -68,4 +68,4 @@ Objetivo del reto: terminar de construir la base del robot
 Esquema/diagrama: capturas de esquematicos/Dante/Robot stackin robojam mayo 2026.png
 Código: aun no
 Métricas clave: no se
-Lecciones aprendidas y siguiente ajuste:
+Lecciones aprendidas y siguiente ajuste: terminar el robot la siguiente clase, diseñar la garra y hacerla, hacer las conexiones al essp 32 y comenzar a programarlo
