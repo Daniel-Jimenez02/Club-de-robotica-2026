@@ -4,7 +4,7 @@
  - 1 Puente H
  -1 Bateria lipo
  -4 Sensores infrarrojo
- -2 Motores
+ -2 Motores (TT-MOT-350RPM-ENCO)
  -1 Switch electrico
  -jumper wires
  -1 Ultrasonido 
