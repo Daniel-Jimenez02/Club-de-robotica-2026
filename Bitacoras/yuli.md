@@ -7,7 +7,8 @@
  -2 Motores (TT-MOT-350RPM-ENCO)
  -1 Switch electrico
  -jumper wires
- -1 Ultrasonido 
+ -1 Ultrasonido
+ - Giroscopio Arduino(MPU-6050)
 3. OBJETOS:
  - 1 Rueda giratoria
 -  2 Ruedas
