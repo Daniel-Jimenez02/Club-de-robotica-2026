@@ -56,3 +56,6 @@ aproximado de precio:$310.000 COP
 
 competencia robojam (stackin)
 objetivo: terminar de atornillar las piezas para que queden firmes 
+esquema: capturas_de_esquematico/dante/robot stackin mayo 2026.png
+codigo: no aplica por el momento
+metricas: 
