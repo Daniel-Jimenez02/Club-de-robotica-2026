@@ -58,4 +58,5 @@ competencia robojam (stackin)
 objetivo: terminar de atornillar las piezas para que queden firmes 
 esquema: capturas_de_esquematico/dante/robot stackin mayo 2026.png
 codigo: no aplica por el momento
-metricas: 
+metricas: nose
+lecciones aprendidas: revisar el chasis el chasis antes de hacer huecos , usar el shield de esp32
