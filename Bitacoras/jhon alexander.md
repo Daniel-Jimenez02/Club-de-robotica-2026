@@ -54,3 +54,5 @@ aproximado de precio:$310.000 COP
 
 18/04/2026
 
+competencia robojam (stackin)
+objetivo: terminar de atornillar las piezas para que queden firmes 
