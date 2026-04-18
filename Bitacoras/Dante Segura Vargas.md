@@ -69,3 +69,10 @@ Esquema/diagrama: capturas de esquematicos/Dante/Robot stackin robojam mayo 2026
 Código: aun no
 Métricas clave: no se
 Lecciones aprendidas y siguiente ajuste: terminar el robot la siguiente clase, diseñar la garra y hacerla, hacer las conexiones al essp 32 y comenzar a programarlo
+
+Bitacora de Dante    Fecha: 18/abr/2026
+Objetivo del reto: construir el robot para participar en robojam
+Esquema/diagrama: capturas de esquematicos/Dante/Robot stackin robojam mayo 2026.png
+Código: aun no
+Métricas clave: todavia no
+Lecciones aprendidas y siguiente ajuste:
