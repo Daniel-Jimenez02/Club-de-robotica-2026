@@ -50,3 +50,7 @@ Piezas de Metal (de la fábrica): Los rieles guía y el soporte del sensor.
 Cables Jumper (Macho-Macho, Macho-Hembra): Para las conexiones.
 Tornillería M3 y M4: Para asegurar motores y piezas de metal al plástico.
 aproximado de precio:$310.000 COP
+
+
+18/04/2026
+
