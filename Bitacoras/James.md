@@ -166,7 +166,7 @@ void mostrarDistancia() {
   float vueltas = pulsos / pulsos_por_vuelta;
 
   CODIGO GIROSCOPIO:
-    #include <Wire.h>
+#include <Wire.h>
 #include <math.h>
 
 const int MPU = 0x68;
@@ -177,22 +177,20 @@ float offsetX = 0;
 float offsetY = 0;
 float offsetZ = 0;
 
-// Suavizado
 float x_filtrado = 0;
 float y_filtrado = 0;
 float z_filtrado = 0;
 
 void setup() {
-  Serial.begin(9600); // más estable
+  Serial.begin(9600);
   Wire.begin();
 
-  // Activar MPU6050
   Wire.beginTransmission(MPU);
   Wire.write(0x6B);
   Wire.write(0);
   Wire.endTransmission(true);
 
-  Serial.println("Calibrando...");
+  Serial.println("Calibrando... No mover el sensor");
   delay(2000);
 
   leerDatos();
@@ -210,7 +208,6 @@ void loop() {
   float y = anguloY() - offsetY;
   float z = anguloZ() - offsetZ;
 
-  //  Suavizado (filtro simple)
   x_filtrado = 0.9 * x_filtrado + 0.1 * x;
   y_filtrado = 0.9 * y_filtrado + 0.1 * y;
   z_filtrado = 0.9 * z_filtrado + 0.1 * z;
@@ -224,10 +221,9 @@ void loop() {
   Serial.print(" | Z: ");
   Serial.println(z_filtrado);
 
-  delay(50); //  más lento y constante
+  delay(50); 
 }
 
-// Leer datos
 void leerDatos() {
   Wire.beginTransmission(MPU);
   Wire.write(0x3B);
@@ -239,7 +235,7 @@ void leerDatos() {
   AcZ = Wire.read() << 8 | Wire.read();
 }
 
-// Ángulos
+
 float anguloX() {
   float ax = AcX / 16384.0;
   float ay = AcY / 16384.0;
@@ -251,19 +247,13 @@ float anguloY() {
   float ax = AcX / 16384.0;
   float ay = AcY / 16384.0;
   float az = AcZ / 16384.0;
-  return atan2(-ax, sqrt(ay*ay + az*az)) * 180 / PI;
+  return atan2(-ax, sqrt(ay * ay + az * az)) * 180 / PI;
 }
 
 float anguloZ() {
   float ax = AcX / 16384.0;
   float ay = AcY / 16384.0;
   return atan2(ay, ax) * 180 / PI;
-}
-
-  
-  float distancia = vueltas * 2 * 3.1416 * radio_rueda;
-  Serial.print("Distancia (cm): ");
-  Serial.println(distancia);
 }
 
 5.
