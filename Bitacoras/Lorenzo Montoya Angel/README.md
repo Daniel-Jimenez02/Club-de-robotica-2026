@@ -70,7 +70,9 @@ Objetivo:
 Esquema:
 <img width="429" height="286" alt="esquema" src="https://github.com/user-attachments/assets/5f9fddba-773a-4e07-8126-97f5da84e33c" />
 
-Codigo: 
+Codigo: SPIKE
+Sin codigo aun.
 
 Reflexion: 
-
+Se cumplieron la mayoria de los objetivos, realizando el robot que por lo menos puede moverse, solo falta algunos mejoramientos.
+Tambien un esquema que resume mas o menos como debe de ser.
