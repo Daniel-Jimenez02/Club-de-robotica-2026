@@ -22,3 +22,17 @@ Declarar motores y conexión bluetooth: conexión constante y fuerte con el cont
 métricas clave: tiempos, error, consistencia.
 
 Lecciones aprendidas y siguiente ajuste.
+
+ 25/04/26
+ Cambiamos el Arduino Uno a SP32 para poder tener conexiones bluetooth a control remoto y poder manejar el robot, Cambiamos conexiones ya que en el SP32 no hay las mismas conexiones que en Arduino Uno, se ha dificultado un poco colocar el SP32 ya que es mas grande y la placa es mas pequeña, se cambiaron los Pines: 
+ Motor izquierdo 
+ ENA: 7
+ IN1: 2
+ IN2: 3
+ Motor derecho
+ ENB: 6
+ IN3: 4
+ IN4: 5 
+
+ modulo bluetooth: VCC: V1 
+                   GND: GND 1
