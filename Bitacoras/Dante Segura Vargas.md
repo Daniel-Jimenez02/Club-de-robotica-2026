@@ -75,4 +75,11 @@ Objetivo del reto: construir el robot para participar en robojam
 Esquema/diagrama: capturas de esquematicos/Dante/Robot stackin robojam mayo 2026.png
 Código: aun no
 Métricas clave: todavia no
+Lecciones aprendidas y siguiente ajuste: hoy cambiamos la carcasa anterior del robot por una nueva mas facil de usar y le pusimos la mayoria de cosas, en la siguiente clase le pondremos el segundo piso y probaremos la garra
+
+Bitacora de Dante    Fecha: 25/abr/2026
+Objetivo del reto: construir el robot para participar en robojam
+Esquema/diagrama: capturas de esquematicos/Dante/Robot stackin robojam mayo 2026.png
+Código: aun no
+Métricas clave: todavia no
 Lecciones aprendidas y siguiente ajuste:
