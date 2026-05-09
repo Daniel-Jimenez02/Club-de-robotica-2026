@@ -1,5 +1,5 @@
 Bitacora del  7 de Febrero de 2026:
-El día de hoy comenzamos la sesiones del club  de robotica,el profesor nos comentó los diferentes retos q vamos a realizar y nos dió las instrucciones de como vamos a seguir trabajando mientras formemos parte de ek club.
+El día de hoy comenzamos la sesiones del club  de robotica,el profesor nos comentó los diferentes retos q vamos a realizar y nos dió las instrucciones de como vamos a seguir trabajando mientras formemos parte de eL club.
 
 Bitacora del 14 de Febrero de 2026:
 El día de hoy empezamos a trabajar con un equipo de lego para poder formar robots con este material con ayuda de una aplicación llamada lego spike,para lograr esto conformamos equipos de 3 personas con los cuales observamos y realizamos ejercicios planteados en la página y además empezamos el trabajo para hacer una competencia de robots entre nosotros el dia 28.
