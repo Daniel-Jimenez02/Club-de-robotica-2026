@@ -35,3 +35,7 @@ El día de hoy continuamos con la misma realización de el robot, hoy obtuvimos 
 Bitacora del 25 de Abril de 2026:
 El día de hoy concluimos con las conexiones necesarias para el robot jam y empezamos a mirar la estructura de el código necesario para poder implemtarle a el robot,además dejamos para la próxima sesión vetificar el movimiento del robot y hacer ensayos con la garra que hay que implementarle.
 
+Bitacora del 9 de mayo de 2026:
+El día de hoy mi equipo y yo nos encargamos de por un un lado empezar la construcción de una garra con servos y sus conexiones,mientras que a la vez haciamos el código de movimiento y acomodabamos bien las conexiones hechas en la sección anterior,en general obtuvimos resultados satisfactorios ya que logramos darle movimiento a el robot.
+Esperamos poder tener una sección entre semana para ese día enfocarnos en la implementación y experimentación con la garra, para dejar la última sección la siguiente semana para retocar detalles y la creación de un código final para la competencia.
+
