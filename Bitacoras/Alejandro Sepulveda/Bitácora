@@ -19,3 +19,26 @@ OBJETIVO: finalizar el robot para competir.
 Codigo: este fue acomodado y finalizado, solamente aun no funciona correctamente.
 
 Para esta clase no se alcanzo el objetivo.
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+13/06/2026
+OBJETIVO: Analizar y comprender las proximas copetencias y organizar/distribuir el orden de armado de los robots para dichas copetencias 
+
+COPETENCIAS: 
+- Seguidor De Linea Velocista 
+- XRP Orbit Obyssey
+- Robot Sumo 
+
+LISTA DE MATERIALES PARA LA PROXIMA CLASE (20/06/2026): 
+- Kit Del XRP 
+- Motoreductor dc 
+- cables macho, macho
+- cables macho, hembra
+- baterias azules x2
+- porta pilas
+- suiche
+- puente H (L298N)
+- Sensores INF x3
+- Arduino (no definido, estaremos haciendo pruebas con el)
