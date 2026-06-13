@@ -86,7 +86,7 @@ Objetivo:
 -Terminar de construir el robot y codigo desde casa, teniendo ya todo preparado para la competencia del día jueves.
 
 Pruebas fisicas:
-<img width="1600" height="738" alt="WhatsApp Image 2026-06-13 at 10 46 50 AM" src="https://github.com/user-attachments/assets/e1ed75a5-f114-4ed5-ac2e-23e8aa69c57f" />
+<img width="800" height="385" alt="WhatsApp Image 2026-06-13 at 10 46 50 AM" src="https://github.com/user-attachments/assets/e1ed75a5-f114-4ed5-ac2e-23e8aa69c57f" />
 
 
 Codigo: SPIKE
@@ -104,6 +104,7 @@ Objetivo:
 -Competir y llegar a posicionarse en los tres primeros puestos
 
 Pruebas fisicas(No se le tomo fotos en el momento de competir):
+
 <img width="321" height="285" alt="WhatsApp Image 2026-06-13 at 10 49 33 AM" src="https://github.com/user-attachments/assets/aaa5dd4f-5b9e-41bb-b4ed-d99e48feb3fc" />
 
 
