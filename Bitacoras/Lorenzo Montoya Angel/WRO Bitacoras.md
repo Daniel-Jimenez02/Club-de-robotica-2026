@@ -85,8 +85,9 @@ Equipo: Adrian Navarro, Lorenzo Montoya
 Objetivo:
 -Terminar de construir el robot y codigo desde casa, teniendo ya todo preparado para la competencia del día jueves.
 
-Esquema:
-<img width="429" height="286" alt="esquema" src="https://github.com/user-attachments/assets/5f9fddba-773a-4e07-8126-97f5da84e33c" />
+Pruebas fisicas:
+<img width="1600" height="738" alt="WhatsApp Image 2026-06-13 at 10 46 50 AM" src="https://github.com/user-attachments/assets/e1ed75a5-f114-4ed5-ac2e-23e8aa69c57f" />
+
 
 Codigo: SPIKE
 Codigo Cosiampiro (Archivo en GitHub)
@@ -102,8 +103,9 @@ Equipo: Adrian Navarro, Lorenzo Montoya
 Objetivo:
 -Competir y llegar a posicionarse en los tres primeros puestos
 
-Esquema:
-<img width="429" height="286" alt="esquema" src="https://github.com/user-attachments/assets/5f9fddba-773a-4e07-8126-97f5da84e33c" />
+Pruebas fisicas(No se le tomo fotos en el momento de competir):
+<img width="321" height="285" alt="WhatsApp Image 2026-06-13 at 10 49 33 AM" src="https://github.com/user-attachments/assets/aaa5dd4f-5b9e-41bb-b4ed-d99e48feb3fc" />
+
 
 Codigo: SPIKE
 Codigo Cosiampiro (Archivo en GitHub)
