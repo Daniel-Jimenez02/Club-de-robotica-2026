@@ -86,6 +86,7 @@ Objetivo:
 -Terminar de construir el robot y codigo desde casa, teniendo ya todo preparado para la competencia del día jueves.
 
 Pruebas fisicas:
+
 <img width="400" height="235" alt="WhatsApp Image 2026-06-13 at 10 46 50 AM" src="https://github.com/user-attachments/assets/e1ed75a5-f114-4ed5-ac2e-23e8aa69c57f" />
 
 
