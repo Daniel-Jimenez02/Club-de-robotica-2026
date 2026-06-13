@@ -1,5 +1,7 @@
 -------------------------------------------------------------BITACORA 1---------------------------------------------------------------
+
 21/03/26
+
 Reto: WRO Colombia UPB - Categoria: RoboMission
 Equipo: Adrian Navarro, Lorenzo Montoya, Majo (Puede ser)
 
@@ -18,7 +20,9 @@ la competencia y como participar correctamente en la competencia.
 
 
 -------------------------------------------------------------BITACORA 2---------------------------------------------------------------
+
 22/03/26
+
 Reto: WRO Colombia UPB - Categoria: RoboMission
 Equipo: Adrian Navarro, Lorenzo Montoya
 
@@ -32,7 +36,9 @@ Codigo: no se realizo
 No se realizo.
 
 -------------------------------------------------------------BITACORA 3---------------------------------------------------------------
+
 11/04/2026
+
 Reto: WRO Colombia UPB - Categoria: RoboMission
 Equipo: Adrian Navarro, Lorenzo Montoya
 
@@ -60,7 +66,9 @@ Codigo: no se realizo
 Reflexion: No pusieron bruh.
 
 -------------------------------------------------------------BITACORA 4---------------------------------------------------------------
+
 16/04/2026
+
 Reto: WRO Colombia UPB - Categoria: RoboMission
 Equipo: Adrian Navarro, Lorenzo Montoya
 
@@ -79,7 +87,9 @@ Se cumplieron la mayoria de los objetivos, realizando el robot que por lo menos 
 Tambien un esquema que resume mas o menos como debe de ser.
 
 -------------------------------------------------------------BITACORA 5---------------------------------------------------------------
+
 19/04/2026
+
 Reto: WRO Colombia UPB - Categoria: RoboMission
 Equipo: Adrian Navarro, Lorenzo Montoya
 
@@ -98,7 +108,9 @@ Reflexion:
 Se logor terminar el robot para competir faltando solamente el codigo.
 
 -------------------------------------------------------------BITACORA 6---------------------------------------------------------------
+
 21/04/2026
+
 Reto: WRO Colombia UPB - Categoria: RoboMission
 Equipo: Adrian Navarro, Lorenzo Montoya
 
