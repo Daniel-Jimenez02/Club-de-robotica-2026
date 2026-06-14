@@ -19,3 +19,4 @@ bateria
 tornillos, tuercas, etc
 
 CIRCUITO:  
+ <img width="1342" height="1172" alt="Circuito" src="https://github.com/user-attachments/assets/58ea5a85-73d3-4689-bcb5-e018a735ce3d" />
