@@ -1,14 +1,21 @@
-COMPETENCIA SEGUIDOR DE LÍNEA: se debe hacer un robot que siga una circuito de línea a ritmo constante y que gane :D lacomptenecia se realizara el 3 de Octubre 
+OBJETIVO 13/06/26: Actualizar la bitacora, hablar con los compañeros para asignar que debe hacer cada uno, dejar el diagrama del circuito
+listo para reclamar los componentes en la proxima sesión, ponerse de acuerdo con los tiempos para realizar todos los robots.
+
+OBJETIVO DE COMPETENCIA: Se participara en la competencia de seguidor de linea el dia 3 de octubre en equipos de a 3 personas, el equpico 
+esta conformado por Yuli, Yohan y Angelica. El robot debe en completar la secuencia sin salirse de la pista y en una velocidad rápida pero 
+moderada, Se gana mayor puntaje mientras más rápido se completa la pista.
+
 MATERIALES: 
-arduino Nano
+1 arduino Nano
 2 motores 
-puente h
+1 puente h
 jumpers y cables
-sensores infrarrojos 
-llantas
+3 sensores infrarrojos 
+2 llantas
 bateria 
-chasis 
-rueda loca 
-interruptor 
+1 chasis 
+1 rueda loca 
+1 interruptor 
 tornillos, tuercas, etc
+
 CIRCUITO:  
