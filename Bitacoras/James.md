@@ -1,5 +1,5 @@
                                                                                                                                                       21/02/2026
-BUMPERBOT EVOLUTION
+SEGUIDOR DE LINEA
 
 1. Crear y programar un robot que retire una serie de 10 obstáculos(Vasos) de una pista, en un tiempo de 2 minutos, sin salirse de la pista mientras lo hace.
 
@@ -17,7 +17,8 @@ Materiales:
  Objetos:
   - Rueda giratoria
   - Ruedas
-  <img width="2664" height="2325" alt="EPM_bb" src="https://github.com/user-attachments/assets/375fd555-426a-46d1-9e05-8d340d934e7b" />
+  ![Uploading image.png…]()
+
 
 
 3.
