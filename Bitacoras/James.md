@@ -17,7 +17,8 @@ Materiales:
  Objetos:
   - Rueda giratoria
   - Ruedas
-  ![Uploading image.png…]()
+  ![Uploading 607635522-58ea5a85-73d3-4689-bcb5-e018a735ce3d.png…]()
+
 
 
 
