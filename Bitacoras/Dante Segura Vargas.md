@@ -99,3 +99,9 @@ Código: /Proyectos/stackin Dante/robojam_2026_stackin.ino.ino
 Métricas clave: todavia no
 Lecciones aprendidas y siguiente ajuste: hoy terminamos entre comillas el robot, se nos daño el servo de la garra entonces toca venir en semana a reemplazarlo y a finalizar unos detalles
 
+Bitacora de Dante    Fecha: 6/jun/2026
+Objetivo del reto: 
+Esquema/diagrama: 
+Código: 
+Métricas clave: 
+Lecciones aprendidas y siguiente ajuste:
