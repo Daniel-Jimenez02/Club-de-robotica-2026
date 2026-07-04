@@ -111,4 +111,13 @@ Objetivo del reto: terminar el seguidor de linea
 Esquema/diagrama: no se
 Código: todavia no
 Métricas clave: no se
-Lecciones aprendidas y siguiente ajuste: probar/testear el equipo con el que tranajamos antes de armar el robot para verificar que todo funcione
+[Lecciones aprendidas y siguiente ajuste: probar/testear el equipo con el que tranajamos antes de armar el robot para verificar que todo funcione
+  Lista de materiales:
+  -Chasis
+  -Raspberry + expansión.
+  -Sensor infrarrojo x3
+  -puente H x1
+  -cables hembra-hembra x9, macho-hembra x2
+  -Motores x2
+  -portabaterías x1
+  -interruptor x1]
