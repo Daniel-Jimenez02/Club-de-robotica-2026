@@ -10,19 +10,19 @@ Ultima fecha de modificación: 20/06/26
 //<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>--DEFINIR--<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 
   //MOTORES
-#define MD1 2
-#define MD2 3
-#define MI1 4
-#define MI2 5
+#define MD1 3
+#define MD2 4
+#define MI1 5
+#define MI2 6
 
   //SENSORES
-#define s1 4
-#define s2 5
-#define s3 6
+#define s1 10
+#define s2 9
+#define s3 8
 
   //PWM
-#define ENA 10
-#define ENB 11
+#define ENA 2
+#define ENB 7
 
   //VARIABLES
 int vs1=0;
@@ -99,14 +99,14 @@ void setup() {
 
 void loop() {
   lectura_sensores();
-  if(vs1==1 && vs2==0 && vs3==1){
+  if(vs1==0 && vs2==1 && vs3==0){
     avanzar();
   }
   else if(vs1==1 && vs2==0 && vs3==0){
-    girar_izq();
+    girar_der();
   }
   else if(vs1==0 && vs2==0 && vs3==1){
-    girar_der();
+    girar_izq();
   }
   else{
     girar_izq();
