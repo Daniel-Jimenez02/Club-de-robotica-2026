@@ -23,3 +23,39 @@ SDL_Velocista_Junio_2026_v1
 
 Reflexion: 
 Cumplimos todos los objetivos, faltando solamente hacer pruebas.
+
+-------------------------------------------------------------BITACORA 2---------------------------------------------------------------
+
+04/07/2026
+
+Reto: Seguidor de linea Velocista
+Equipo: Victoria, Alejo, Lorenzo
+
+Objetivo:
+-Finalizar Robot, Hacer pruebas.
+
+Esquema:
+
+
+Codigo: 
+SDL_Velocista_Junio_2026_v1
+
+Reflexion: 
+No se logro. Ausencia de la mayor parte del equipo.
+-------------------------------------------------------------BITACORA 3---------------------------------------------------------------
+
+11/07/2026
+
+Reto: Seguidor de linea Velocista
+Equipo: Victoria, Alejo, Lorenzo
+
+Objetivo:
+-Finalizar Robot, Hacer pruebas.
+
+Fotografia:
+
+
+Codigo: 
+SDL_Velocista_Junio_2026_v1
+
+Reflexion: 
