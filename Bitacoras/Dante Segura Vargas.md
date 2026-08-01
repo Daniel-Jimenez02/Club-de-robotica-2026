@@ -121,3 +121,9 @@ Métricas clave: no se
   -Motores x2
   -portabaterías x1
   -interruptor x1]
+Bitacora de Dante    Fecha: 11/jul/2026
+Objetivo del reto: 
+Esquema/diagrama: 
+Código: 
+Métricas clave: 
+Lecciones aprendidas y siguiente ajuste:
