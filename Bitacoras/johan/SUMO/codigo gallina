@@ -1,0 +1,166 @@
+const int echo = 3;   // Echo del ultrasonido
+const int trig = 2;   // Trigger del ultrasonido
+
+const int sen1 = 8;
+const int sen2 = 10;
+const int sen3 = 11;
+const int sen4 = 12;
+
+const int MotorIzqAtras = 4;
+const int MotorIzqAdelante = 5;
+const int MotorDerAdelante = 6;
+const int MotorDerAtras = 7;
+
+float distancia = 0;
+
+//---------------------- FUNCIONES DE MOVIMIENTO ----------------------
+
+void adelante() {
+  digitalWrite(MotorDerAtras, LOW);
+  digitalWrite(MotorDerAdelante, HIGH);
+  digitalWrite(MotorIzqAtras, LOW);
+  digitalWrite(MotorIzqAdelante, HIGH);
+}
+
+void atras() {
+  digitalWrite(MotorDerAtras, HIGH);
+  digitalWrite(MotorDerAdelante, LOW);
+  digitalWrite(MotorIzqAtras, HIGH);
+  digitalWrite(MotorIzqAdelante, LOW);
+}
+
+void girarDer() {
+  digitalWrite(MotorDerAtras, HIGH);
+  digitalWrite(MotorDerAdelante, LOW);
+  digitalWrite(MotorIzqAtras, LOW);
+  digitalWrite(MotorIzqAdelante, HIGH);
+}
+
+void girarIzq() {
+  digitalWrite(MotorDerAtras, LOW);
+  digitalWrite(MotorDerAdelante, HIGH);
+  digitalWrite(MotorIzqAtras, HIGH);
+  digitalWrite(MotorIzqAdelante, LOW);
+}
+
+void parar() {
+  digitalWrite(MotorDerAtras, LOW);
+  digitalWrite(MotorDerAdelante, LOW);
+  digitalWrite(MotorIzqAtras, LOW);
+  digitalWrite(MotorIzqAdelante, LOW);
+}
+
+//---------------------- SETUP ----------------------
+
+void setup() {
+
+  pinMode(echo, INPUT);
+  pinMode(trig, OUTPUT);
+  digitalWrite(trig, LOW);
+
+  pinMode(sen1, INPUT);
+  pinMode(sen2, INPUT);
+  pinMode(sen3, INPUT);
+  pinMode(sen4, INPUT);
+
+  pinMode(MotorDerAtras, OUTPUT);
+  pinMode(MotorDerAdelante, OUTPUT);
+  pinMode(MotorIzqAtras, OUTPUT);
+  pinMode(MotorIzqAdelante, OUTPUT);
+  delay(5000);
+ // Serial.begin(9600);
+}
+
+//---------------------- LOOP ----------------------
+
+void loop() {
+
+  // Lectura de sensores
+  int s1 = digitalRead(sen1);
+  int s2 = digitalRead(sen2);
+  int s3 = digitalRead(sen3);
+  int s4 = digitalRead(sen4);
+/*
+  Serial.print("S1: ");
+  Serial.print(s1);
+  Serial.print("  S2: ");
+  Serial.print(s2);
+  Serial.print("  S3: ");
+  Serial.print(s3);
+  Serial.print("  S4: ");
+  Serial.println(s4);
+*/
+  // Medición del ultrasonido
+  digitalWrite(trig, LOW);
+  delayMicroseconds(2);
+
+  digitalWrite(trig, HIGH);
+  delayMicroseconds(10);
+
+  digitalWrite(trig, LOW);
+
+  distancia = pulseIn(echo, HIGH);
+  distancia = distancia / 58.0;
+/*
+  Serial.print("Distancia: ");
+  Serial.print(distancia);
+  Serial.println(" cm");
+*/
+  // Si todos los sensores están en negro, usar el ultrasonido
+  if (s1 == HIGH && s2 == HIGH && s3 == HIGH && s4 == HIGH) {
+
+    if (distancia < 50) {
+      adelante();
+    } else {
+      girarDer();
+    }
+  }  
+
+  // Sensores 1 y 2 negros
+  else if (s1 == HIGH && s2 == HIGH && s3 == LOW && s4 == LOW) {
+    adelante();
+    delay(1000);
+    parar();
+  }
+
+  // Sensor 4 blanco
+  else if (s1 == HIGH && s2 == HIGH && s3 == HIGH && s4 == LOW) {
+    adelante();
+    delay(1000);
+    parar();
+  }
+
+  // Sensor 3 blanco
+  else if (s1 == HIGH && s2 == HIGH && s3 == LOW && s4 == HIGH) {
+    adelante();
+    delay(1000);
+    parar();
+  }
+
+  // Sensores 3 y 4 negros
+  else if (s1 == LOW && s2 == LOW && s3 == HIGH && s4 == HIGH) {
+    atras();
+    delay(1000);
+    parar();
+  }
+
+  // Sensor 1 blanco
+  else if (s1 == LOW && s2 == HIGH && s3 == HIGH && s4 == HIGH) {
+    atras();
+    delay(1000);
+    parar();
+  }
+
+  // Sensor 2 blanco
+  else if (s1 == HIGH && s2 == LOW && s3 == HIGH && s4 == HIGH) {
+    atras();
+    delay(1000);
+    parar();
+  }
+
+  else {
+    parar();
+  }
+
+  delay(100);
+}
