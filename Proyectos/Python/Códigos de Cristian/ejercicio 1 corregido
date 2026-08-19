@@ -1,0 +1,19 @@
+#ejercicio 1 correcto
+vector =[]
+veces = 0
+total = 0 
+print("hola este programa va a tomar los numeros que quiera y los promediara y cuando pongas 0 se tomaran estos datos y te dara el resultado")
+a = int(input("ingrese su primer numero:"))
+while a != 0 :
+    vector.append(a)
+    total = total + a
+    veces = veces + 1
+    a = int(input("ingrese el siguiente numero numero: "))
+    
+print("numeros originales: ",vector)
+vector.sort(reverse=True)
+print("numeros organizados de mayor a menor: ", vector)
+vector.sort()
+print("numeros organizados de menor a mayor: ", vector)
+print("El total es", total)
+print("total dividido:", total / veces)
