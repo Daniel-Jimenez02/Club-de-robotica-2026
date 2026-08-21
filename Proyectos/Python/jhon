@@ -1,1 +1,13 @@
 
+print("hola usuario vamos a reconfirmar tu informacion")
+print("--------------------------------------")
+nombre= input("escribe tu nombre")
+apellido=input("escribe tu apellido")
+edad=input("escribe tu edad")
+ocupacion=input("escribe tu ocupacion")
+print("//--------------------------------\\")
+print("tu nombre completo es", nombre, apellido)
+print("tu edad es:", edad)
+print("tu ocupacion es:", ocupacion)
+
+como no entendi la clase pasada entonces hice el codigo facil profe tranquilo que no esta hecho con chatgpt
