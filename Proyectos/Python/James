@@ -1,0 +1,19 @@
+numeros = []
+
+cantidadDeNumeros = int(input("¿Cuántos números quiere ingresar? "))
+
+for i in range(cantidadDeNumeros):
+    numero = int(input("Ingrese un número: "))
+    numeros.append(numero)
+
+print("Números ingresados:", numeros)
+
+numeros.sort(reverse=True)
+print("De mayor a menor: ", numeros)
+
+numeros.sort()
+print("De menor a mayor: ", numeros)
+
+suma = sum(numeros)
+promedio = suma / cantidadDeNumeros
+print("El promedio es: ", promedio)
