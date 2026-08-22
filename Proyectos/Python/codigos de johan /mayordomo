@@ -1,0 +1,10 @@
+print("hola usuario mucho gusto en conocerte mi nombre es mayor y")
+usuario = input("¿cual es tu nombre?")
+usuari = int(input("¿cual es la edad? mi edad es una hora"))
+usuar = input("¿en que trabajas para no morir de hambre? yo soy un programa este es mi trabajo y no me pagan")
+if usuari > 18:
+    votar= "Si"
+else :
+    votar = "No"
+print(f"hola {usuario} mucho gusto , tienes {usuario} y {votar} puedes votar por el tigre , y tu trabajo es {usuar} que mal trabajo")
+
