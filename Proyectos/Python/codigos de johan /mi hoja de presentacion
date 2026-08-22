@@ -1,0 +1,10 @@
+Nombre = "Johan Felipe Espinosa Graciano "
+Edad = 13
+bot = "gallina"
+pyc = "pythin y C++ y yo creo que scratch no vale "
+print("_" * 70)
+print("Nombre:",Nombre)
+print("Edad",Edad)
+print("Robot favorito:",bot)
+print("Lenguaje que conoce:",pyc)
+print("-" * 70)
