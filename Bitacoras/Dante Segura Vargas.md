@@ -121,9 +121,25 @@ Métricas clave: no se
   -Motores x2
   -portabaterías x1
   -interruptor x1]
-Bitacora de Dante    Fecha: 11/jul/2026
-Objetivo del reto: 
+Bitacora de Dante    Fecha: del 11/jul/2026 al 15/ago/2026
+Objetivo del reto: no me acuerdo exactamente, pero la mayoria era terminar el sumo y el seguidor de linea
+Esquema/diagrama: nose
+Código: tampoco
+Métricas clave: las reglas respectivas de cada robot
+Lecciones aprendidas y siguiente ajuste: aprendimos que no sabemos hacer las cosas con seriedad y que cuando algo funciona bien a la otra clase ya no :)
+
+Bitacora de Dante    Fecha: 15/ago/2026
+Objetivo del reto: empezar el xrp e introduccion a python
 Esquema/diagrama: 
 Código: 
 Métricas clave: 
-Lecciones aprendidas y siguiente ajuste:
+Lecciones aprendidas y siguiente ajuste: aprendimos las cosas basicas de python, hay que seguir trabajando en python y hacer la tarea que nos dejaron
+
+
+Bitacora de Dante    Fecha: 22/ago/2026
+Objetivo del reto: ver python y arreglar el sumo
+Esquema/diagrama: 
+Código: 
+Métricas clave: 
+Lecciones aprendidas y siguiente ajuste: aprendimos que los motores por alguna razon hacen corto por existir, decidimos que el xrp va a ser con bloques y como no terminamos el sumo toca ir en semana
+
