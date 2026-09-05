@@ -8,4 +8,4 @@ Objetivos:
 -lograr que los motores funcionen (prueba de velocidad) 
 5/09/2026 XRP
 Visualicé la forma en que se deben comportar los orbots y como participan los equipos.
-deber de construir un borrador/prototipo de la pista\n >w< 
+deber de construir un borrador/prototipo de la pista.
