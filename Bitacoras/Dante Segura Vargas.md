@@ -143,3 +143,9 @@ Código:
 Métricas clave: 
 Lecciones aprendidas y siguiente ajuste: aprendimos que los motores por alguna razon hacen corto por existir, decidimos que el xrp va a ser con bloques y como no terminamos el sumo toca ir en semana
 
+Bitacora de Dante    Fecha: 5/sep/2026
+Objetivo del reto: hacer el xrp y ordenarnos en seguidor de linea, ya que no organizamos bien los equipos y tocó cambiarlos, nos dieron tiempo para organizar los nuevos equipos y areglar y decidir cosas con los robots, luego la idea es terminar el radiocontrol del xrp y ya
+Esquema/diagrama: nose
+Código: tampocose
+Métricas clave: nose
+Lecciones aprendidas y siguiente ajuste:
