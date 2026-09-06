@@ -188,6 +188,9 @@ Objetivo:
 
 Fotografia:
 
+<img width="773" height="380" alt="Captura de pantalla 2026-09-05 230305" src="https://github.com/user-attachments/assets/084adbef-7c51-4277-a4f3-0eea7548710d" />
+
+
 
 Reflexion: 
 Se aprendio lo basico, y se decidio seguir el tema a final de año.
