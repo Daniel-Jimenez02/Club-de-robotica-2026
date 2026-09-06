@@ -205,6 +205,7 @@ Objetivo:
 -Estudiar y comprender como utilizar el XRP Code.
 
 Fotografia:
+
 <img width="275" height="311" alt="Captura de pantalla 2026-09-05 230104" src="https://github.com/user-attachments/assets/482218cf-98f2-408b-89d4-24045931b800" />
 
 
