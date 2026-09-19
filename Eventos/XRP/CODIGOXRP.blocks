@@ -1,0 +1,62 @@
+from XRPLib.board import Board
+from XRPLib.webserver import Webserver
+from XRPLib.encoded_motor import EncodedMotor
+
+board = Board.get_default_board()
+
+webserver = Webserver.get_default_webserver()
+
+motor1 = EncodedMotor.get_default_encoded_motor(1)
+
+motor2 = EncodedMotor.get_default_encoded_motor(2)
+
+
+board.wait_for_button()
+
+def func394():
+  motor1._motor.flip_dir = (True)
+  motor2._motor.flip_dir = (False)
+  motor1.set_speed(60)
+  motor2.set_speed(60)
+
+webserver.registerForwardButton(func394)
+
+def func395():
+  motor1._motor.flip_dir = (False)
+  motor2._motor.flip_dir = (True)
+  motor1.set_speed(60)
+  motor2.set_speed(60)
+
+webserver.registerBackwardButton(func395)
+
+def func396():
+  motor1._motor.flip_dir = (False)
+  motor2._motor.flip_dir = (False)
+  motor1.set_speed(60)
+  motor2.set_speed(60)
+
+webserver.registerLeftButton(func396)
+
+def func397():
+  motor1._motor.flip_dir = (True)
+  motor2._motor.flip_dir = (True)
+  motor1.set_speed(60)
+  motor2.set_speed(60)
+
+webserver.registerRightButton(func397)
+
+def func398():
+  motor1.set_speed()
+  motor2.set_speed()
+
+webserver.registerStopButton(func398)
+webserver.log_data("johan puto", 'peque putito')
+webserver.start_network(ssid="BARCELONA DE ECUADOR", password="87654321")
+webserver.start_server()
+webserver.connect_to_network(ssid="BARCELONA DE ECUADOR", password="87654321")
+webserver.start_server()
+
+
+
+## [2026-09-12 11:14:48]
+##XRPBLOCKS {"blocks":{"languageVersion":0,"blocks":[{"type":"xrp_wait_for_button_press","id":"!x]m9V0tMof42Uw#CA?{","x":-298,"y":-627,"next":{"block":{"type":"xrp_ws_forward_button","id":",Y%Z?e,?nkkajEph.G^(","inputs":{"func":{"block":{"type":"xrp_motor_direction","id":".CEpP-{L#3/+dU![xlFY","fields":{"MOTOR":"1","DIRECTION":"True"},"next":{"block":{"type":"xrp_motor_direction","id":"]B@Q#`A:pBBr+1EN!AC:","fields":{"MOTOR":"2","DIRECTION":"False"},"next":{"block":{"type":"xrp_motor_speed","id":"YuL3MLK2QDmGA{`X6OJI","fields":{"MOTOR":"1"},"inputs":{"speed":{"shadow":{"type":"math_number","id":"RO{3c_N~Rc}ZM`Hs(2]z","fields":{"NUM":60}}}},"next":{"block":{"type":"xrp_motor_speed","id":"$mlVwHRxeyd|Q%JQAl;|","fields":{"MOTOR":"2"},"inputs":{"speed":{"shadow":{"type":"math_number","id":"=DpMUoO0N#;CR6ekpg68","fields":{"NUM":60}}}}}}}}}}}}},"next":{"block":{"type":"xrp_ws_back_button","id":"%Ce_v)1H_{n#/nzT{1p]","inputs":{"func":{"block":{"type":"xrp_motor_direction","id":";m)Dxi=%%giw?G+hxC[$","fields":{"MOTOR":"1","DIRECTION":"False"},"next":{"block":{"type":"xrp_motor_direction","id":"WCa|f!_ajKBsV,Pyv5m!","fields":{"MOTOR":"2","DIRECTION":"True"},"next":{"block":{"type":"xrp_motor_speed","id":"M#HFKj#OUU?{_/6}pfke","fields":{"MOTOR":"1"},"inputs":{"speed":{"shadow":{"type":"math_number","id":"dKFUH#hB6Is!-kd6T4:k","fields":{"NUM":60}}}},"next":{"block":{"type":"xrp_motor_speed","id":"DO9Hmh]EF]4|sBs|k2t)","fields":{"MOTOR":"2"},"inputs":{"speed":{"shadow":{"type":"math_number","id":"?ZWIc~^276r9cI)H/qOG","fields":{"NUM":60}}}}}}}}}}}}},"next":{"block":{"type":"xrp_ws_left_button","id":"yT]S[pm!V]=Iit8L7q#m","inputs":{"func":{"block":{"type":"xrp_motor_direction","id":"uXScw$2rS[tMc`R6O7*r","fields":{"MOTOR":"1","DIRECTION":"False"},"next":{"block":{"type":"xrp_motor_direction","id":"TRBqu^m%+B!]-`v2Bz,B","fields":{"MOTOR":"2","DIRECTION":"False"},"next":{"block":{"type":"xrp_motor_speed","id":"wMq35JGt~U,x~0lwfcBj","fields":{"MOTOR":"1"},"inputs":{"speed":{"shadow":{"type":"math_number","id":"9hcrv$A?LNyE#0S!x{n0","fields":{"NUM":60}}}},"next":{"block":{"type":"xrp_motor_speed","id":"Dv(H7MccJXnYERA|E{|:","fields":{"MOTOR":"2"},"inputs":{"speed":{"shadow":{"type":"math_number","id":"pLPX}#%x/}tb:CGJKgbz","fields":{"NUM":60}}}}}}}}}}}}},"next":{"block":{"type":"xrp_ws_right_button","id":"nD/uz@=g[D!*g?B9@r=E","inputs":{"func":{"block":{"type":"xrp_motor_direction","id":"]3J67p.bc|#Y.12B7YZ@","fields":{"MOTOR":"1","DIRECTION":"True"},"next":{"block":{"type":"xrp_motor_direction","id":"fVFK5WY40@v803BL#qz8","fields":{"MOTOR":"2","DIRECTION":"True"},"next":{"block":{"type":"xrp_motor_speed","id":"GS._dc0]2Ii%4Kc[mmeQ","fields":{"MOTOR":"1"},"inputs":{"speed":{"shadow":{"type":"math_number","id":"!^:QGxGl[Ta=fQXL.*0f","fields":{"NUM":60}}}},"next":{"block":{"type":"xrp_motor_speed","id":"Z7cxjtuCuuBa,iYw5:G$","fields":{"MOTOR":"2"},"inputs":{"speed":{"shadow":{"type":"math_number","id":"_a]z@];1=wz84n6%zb5q","fields":{"NUM":60}}}}}}}}}}}}},"next":{"block":{"type":"xrp_ws_stop_button","id":"NBM`dAu],O7!SZL.r:nm","inputs":{"func":{"block":{"type":"xrp_motor_speed","id":"`C$Rs:+G,R_2ia+6hu8@","fields":{"MOTOR":"1"},"inputs":{"speed":{"shadow":{"type":"math_number","id":"/[w;lo5b4081D%%$r4rV","fields":{"NUM":0}}}},"next":{"block":{"type":"xrp_motor_speed","id":"/l%%:Hd#N[@%_rVJ*f9W","fields":{"MOTOR":"2"},"inputs":{"speed":{"shadow":{"type":"math_number","id":"B_yZHg2J@iaMS-KSH|P%","fields":{"NUM":0}}}}}}}}},"next":{"block":{"type":"xrp_ws_log_data","id":"1$7DRZ-(rY!?s*@%q6m_","inputs":{"log_name":{"shadow":{"type":"text","id":"2(S8EN@O^xC)2+Csr89w","fields":{"TEXT":"johan puto"}}},"DATA":{"block":{"type":"text","id":"U3$qk?Qxyb=;N{J0+(G6","fields":{"TEXT":"peque putito"}}}},"next":{"block":{"type":"xrp_ws_start_server","id":"5L2+Cd1-bTdXRoR.qt#v","inputs":{"server_ssid":{"shadow":{"type":"text","id":"u|}4yb1u`.R[ig6SNf$G","fields":{"TEXT":"BARCELONA DE ECUADOR"}}},"server_pwd":{"shadow":{"type":"text","id":"=3Yj(OPrQ8`8WYuRSE}[","fields":{"TEXT":"87654321"}}}},"next":{"block":{"type":"xrp_ws_connect_server","id":"?l(=afBry!$KZi+,I22g","inputs":{"server_ssid":{"shadow":{"type":"text","id":"R)HzS@y|kc]`-T^907kH","fields":{"TEXT":"BARCELONA DE ECUADOR"}}},"server_pwd":{"shadow":{"type":"text","id":"RLtw:kWLwh~WLhR5`/G@","fields":{"TEXT":"87654321"}}}}}}}}}}}}}}}}}}}}}]}}
