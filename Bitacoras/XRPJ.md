@@ -1,15 +1,17 @@
-# XRP ROBOTICADOS - control por Bluetooth con la app "XRP Controller"
+# #############################################################################
+# XRP ROBOTICADOS - Control por Bluetooth con la app "XRP Controller"
+# #############################################################################
 from XRPLib.defaults import drivetrain, servo_one
 import bluetooth
 import time
 
-NOMBRE = "XRP-ROBOTICADOS"      # debe coincidir con la app
+NOMBRE = "XRP-Valeria"      # debe coincidir con la app
 
-# Servo 360 en el puerto Servo 1 (calibrar con calibrar_servo.py y prueba_sentidos.py)
-SERVO_CENTRO = 100              # valor en el que el servo queda quieto
-SERVO_VELOCIDAD = 10            # lento = más preciso (ideal ~20 grados por segundo)
-MS_POR_GRADO_HORARIO = 50       # ms que tarda 1 grado en sentido horario
-MS_POR_GRADO_ANTIHORARIO = 50   # ms que tarda 1 grado en sentido antihorario
+# ---------------- CALIBRACIÓN REAL DE TU SERVO ----------------
+SERVO_CENTRO = 94               # Punto neutro exacto (el servo no se mueve)
+SERVO_VELOCIDAD = 10            # 104° para horario / 84° para antihorario
+MS_POR_GRADO_HORARIO = 50       # Milisegundos por grado en sentido horario
+MS_POR_GRADO_ANTIHORARIO = 50   # Milisegundos por grado en sentido antihorario
 
 
 # ---------------- RUTINA AUTÓNOMA (botón AUTO, máximo 30 s) ----------------
@@ -22,7 +24,7 @@ def rutina_autonoma():
     mover(0, 0, 500)         # parar
 
 
-# ---------------- estado ----------------
+# ---------------- ESTADO ----------------
 izq = der = 0.0              # potencia que pide la app (-1 a 1)
 act_izq = act_der = 0.0      # potencia actual de los motores (con arranque suave)
 ultimo = time.ticks_ms()     # cuándo llegó el último comando
@@ -34,20 +36,41 @@ auto_inicio = 0
 cancelar = False
 
 
-def girar_servo(grados):
-    """Gira el servo esos grados (+ horario, - antihorario) y lo apaga."""
+def detener_servo_de_golpe():
+    """Lleva el servo a 94° e inmediatamente corta la señal PWM."""
     global servo_pos
+    servo_one.set_angle(SERVO_CENTRO)  # Pulso en neutro real (94°)
+    time.sleep_ms(50)                   # Margen de estabilización
+    servo_one.free()                   # Cortar señal completamente
+    servo_pos = 0                      # Reiniciar conteo de posición
+    print("SERVO: Detenido de golpe.")
+
+
+def girar_servo(grados):
+    """Mueve el servo en la dirección indicada y se frena inmediatamente al terminar."""
+    global servo_pos
+    if grados == 0:
+        detener_servo_de_golpe()
+        return
+
     if grados > 0:
-        servo_one.set_angle(SERVO_CENTRO + SERVO_VELOCIDAD)
-        time.sleep_ms(grados * MS_POR_GRADO_HORARIO)
-    elif grados < 0:
-        servo_one.set_angle(SERVO_CENTRO - SERVO_VELOCIDAD)
-        time.sleep_ms(-grados * MS_POR_GRADO_ANTIHORARIO)
-    servo_one.free()             # sin señal: el servo se queda quieto
-    servo_pos += grados
+        # Giro horario (94 + 10 = 104)
+        angulo = SERVO_CENTRO + SERVO_VELOCIDAD
+        tiempo = int(grados * MS_POR_GRADO_HORARIO)
+    else:
+        # Giro antihorario (94 - 10 = 84)
+        angulo = SERVO_CENTRO - SERVO_VELOCIDAD
+        tiempo = int(-grados * MS_POR_GRADO_ANTIHORARIO)
+
+    # Iniciar movimiento
+    servo_one.set_angle(angulo)
+    time.sleep_ms(tiempo)
+
+    # Detener de golpe al cumplir el tiempo
+    detener_servo_de_golpe()
 
 
-# ---------------- ayudas para la rutina autónoma ----------------
+# ---------------- AYUDAS PARA LA RUTINA AUTÓNOMA ----------------
 class FinAutonomo(Exception):
     pass
 
@@ -73,7 +96,7 @@ def servo(grados):
 def ejecutar_autonomo():
     global en_auto, auto_inicio, cancelar, izq, der, act_izq, act_der
     print("AUTÓNOMO: inicio")
-    izq = der = act_izq = act_der = 0.0      # al terminar no sigue lo del joystick
+    izq = der = act_izq = act_der = 0.0
     en_auto = True
     cancelar = False
     auto_inicio = time.ticks_ms()
@@ -82,29 +105,31 @@ def ejecutar_autonomo():
     except FinAutonomo:
         pass
     drivetrain.stop()
-    girar_servo(-servo_pos)      # el servo vuelve a donde empezó
+    detener_servo_de_golpe()
     en_auto = False
     print("AUTÓNOMO: fin")
 
 
-# ---------------- comandos que llegan de la app ----------------
+# ---------------- COMANDOS QUE LLEGAN DE LA APP ----------------
 def procesar(texto):
     global izq, der, act_izq, act_der, ultimo, servo_pendiente, auto_pedido, cancelar
     ultimo = time.ticks_ms()
     texto = texto.strip().upper()
     try:
-        if texto == "STOP":                     # parar ya (también el autónomo)
+        if texto == "STOP":                     # Parar todo (motores, servo y autónomo)
             cancelar = True
             izq = der = act_izq = act_der = 0.0
             drivetrain.stop()
+            detener_servo_de_golpe()
         elif texto == "AUTO:START":
             auto_pedido = True
         elif texto == "AUTO:STOP":
             cancelar = True
-        elif texto.startswith("SERVO_PASO:"):   # "SERVO_PASO:+1" o "SERVO_PASO:-1"
+        elif texto.startswith("SERVO_PASO:"):   # Botones de dirección "+1" o "-1"
             servo_pendiente += int(texto[11:])
-        elif texto == "SERVO:0":                # volver a la posición inicial
-            servo_pendiente = -servo_pos
+        elif texto == "SERVO:0":                # BOTÓN DE RESET/CENTRO: Detener de golpe
+            servo_pendiente = 0                 # Cancela cualquier movimiento en cola
+            detener_servo_de_golpe()
         elif texto.startswith("L:") and not en_auto:   # "L:50,R:-20"
             l, r = texto.split(",")
             izq = int(l[2:]) / 100
@@ -119,9 +144,10 @@ def evento_ble(evento, datos):
         print("Conectado")
     elif evento == 2:
         print("Desconectado")
-        if not en_auto:                         # el autónomo sigue hasta terminar
+        if not en_auto:
             izq = der = act_izq = act_der = 0.0
             drivetrain.stop()
+            detener_servo_de_golpe()
         anunciar()
     elif evento == 3:
         procesar(ble.gatts_read(rx).decode())
@@ -135,7 +161,7 @@ def anunciar():
     print("Esperando la app como", NOMBRE)
 
 
-# ---------------- Bluetooth ----------------
+# ---------------- BLUETOOTH ----------------
 SERVICIO = bluetooth.UUID("6E400001-B5A3-F393-E0A9-E50E24DCCA9E")
 RX_UUID = bluetooth.UUID("6E400002-B5A3-F393-E0A9-E50E24DCCA9E")
 TX_UUID = bluetooth.UUID("6E400003-B5A3-F393-E0A9-E50E24DCCA9E")
@@ -148,9 +174,9 @@ ble.irq(evento_ble)
 )
 ble.gatts_set_buffer(rx, 100, False)
 anunciar()
-servo_one.free()
+detener_servo_de_golpe()
 
-# ---------------- programa principal ----------------
+# ---------------- PROGRAMA PRINCIPAL ----------------
 PASO = 0.05     # arranque suave: de 0 a 100 % en 0.4 s
 
 try:
@@ -161,10 +187,10 @@ try:
 
         if servo_pendiente != 0:
             grados = servo_pendiente
-            servo_pendiente -= grados
+            servo_pendiente = 0        # Limpia la cola inmediatamente
             girar_servo(grados)
 
-        # Seguridad: si la app deja de enviar 1 s, parar
+        # Seguridad: si la app deja de enviar datos por 1 s, parar
         if time.ticks_diff(time.ticks_ms(), ultimo) > 1000:
             izq = der = 0.0
 
@@ -174,46 +200,6 @@ try:
         time.sleep_ms(20)
 finally:
     drivetrain.stop()
-    servo_one.free()
+    detener_servo_de_golpe()
     print("Programa detenido")
 
-
-===================================================================================================================================================================
-CALIBRAR SERVO
-===================================================================================================================================================================
-from XRPLib.defaults import servo_one
-import time
-
-try:
-    for valor in range(80, 121, 2):
-        print("Valor:", valor)
-        servo_one.set_angle(valor)
-        time.sleep(2)
-finally:
-    servo_one.free()          # sin señal: el servo se detiene
-    print("Fin de la prueba")
-
-===================================================================================================================================================================
-PROBAR GIROS DE SERVO
-===================================================================================================================================================================
-from XRPLib.defaults import servo_one
-import time
-
-SERVO_CENTRO = 100      # el mismo valor que en main.py
-SERVO_VELOCIDAD = 10    # el mismo valor que en main.py
-SEGUNDOS = 5
-
-try:
-    print("HORARIO", SEGUNDOS, "s -> valor", SERVO_CENTRO + SERVO_VELOCIDAD)
-    servo_one.set_angle(SERVO_CENTRO + SERVO_VELOCIDAD)
-    time.sleep(SEGUNDOS)
-    servo_one.free()
-    print("Quieto: mide cuántos grados giró. Sigue en 5 s...")
-    time.sleep(5)
-
-    print("ANTIHORARIO", SEGUNDOS, "s -> valor", SERVO_CENTRO - SERVO_VELOCIDAD)
-    servo_one.set_angle(SERVO_CENTRO - SERVO_VELOCIDAD)
-    time.sleep(SEGUNDOS)
-finally:
-    servo_one.free()
-    print("Fin: calcula 5000 / grados para cada sentido")
