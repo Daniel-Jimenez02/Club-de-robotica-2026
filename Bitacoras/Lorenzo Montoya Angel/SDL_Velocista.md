@@ -1,3 +1,4 @@
+
 -------------------------------------------------------------BITACORA 1---------------------------------------------------------------
 
 20/06/2026
@@ -77,6 +78,7 @@ Objetivo:
 -Finalizar Robot, Hacer pruebas.
 
 Fotografia:
+<img width="2635" height="1483" alt="20261003_125745" src="https://github.com/user-attachments/assets/ecf1bb01-dd92-468f-ba38-fefb4ea65634" />
 
 
 Codigo: 
@@ -212,6 +214,7 @@ Fotografia:
 <img width="275" height="311" alt="Captura de pantalla 2026-09-05 230104" src="https://github.com/user-attachments/assets/482218cf-98f2-408b-89d4-24045931b800" />
 
 
+
 Codigo: 
 No hay.
 
@@ -232,6 +235,9 @@ Objetivo:
 -Trabajar y avanzar en el robot XRP y mejorar códigos.
 
 Fotografia:
+<img width="2635" height="1483" alt="20261003_125745" src="https://github.com/user-attachments/assets/ecf1bb01-dd92-468f-ba38-fefb4ea65634" />
+<img width="605" height="1310" alt="20260912_102204" src="https://github.com/user-attachments/assets/7b56455f-761d-41dc-b598-c56779f062e2" />
+
 
 
 Codigo: 
@@ -254,6 +260,9 @@ Objetivo:
 -Trabajar y avanzar en el robot XRP y mejorar códigos.
 
 Fotografia:
+<img width="2635" height="1483" alt="20261003_125745" src="https://github.com/user-attachments/assets/ecf1bb01-dd92-468f-ba38-fefb4ea65634" />
+<img width="605" height="1310" alt="20260912_102204" src="https://github.com/user-attachments/assets/7b56455f-761d-41dc-b598-c56779f062e2" />
+
 
 
 Codigo: 
