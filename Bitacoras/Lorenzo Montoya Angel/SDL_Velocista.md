@@ -313,6 +313,18 @@ Para el final de las rondas, en la ultima ronda, se utilizo una estrategia mejor
 
 Reflexión: Lo mejor ser lo mas inteligente y estratégico, buscando los huecos en el reglamento. Por eso mismo siempre leer muy bien este.
 
+----------------Día Viernes 2-10-26:-----------------
+- Competencia: Sumo
+- No vine
+
+
+----------------Día Sabado 3-10-26:-----------------
+- Competencia: Seguidor de linea velocista_________________Base de código: Arduino
+- Equipo: Victoria, Lorenzo_______________________________Código: 
+- Nombre: ALV 2.O
+- Robots: 1____________________________________________Puesto: Fase 2 - 16 mejores
+
+
 
 
 
