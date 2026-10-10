@@ -240,3 +240,71 @@ XRP Code
 
 Reflexion: 
 El día funciono con normalidad, no se logro terminar el robot seguidor de linea extra.
+
+------------------------------------------------------------BITACORA 13---------------------------------------------------------------
+
+12/09/2026
+
+Reto: XRP Orbit Oddysey-Seguidor de linea velocista-Sumo
+Equipo-XRP-CosmicCore: Victoria, Dante, Lorenzo.
+Equipo-ALV (dividido): Victoria, Lorenzo - Alejo, Johan.
+
+Objetivo:
+-Finalizar de armar robots para seguidor de linea, 
+-Trabajar y avanzar en el robot XRP y mejorar códigos.
+
+Fotografia:
+
+
+Codigo: 
+SDL_Velocista_Junio_2026_v1
+XRP Code
+
+Reflexion: 
+El día funciono con normalidad, se logro terminar el robot seguidor de linea extra.
+
+------------------------------------------------------------BITACORA 14---------------------------------------------------------------
+
+19/09/2026
+No vine
+
+------------------------------------------------------------BITACORA 15---------------------------------------------------------------
+
+26/09/2026
+No vine
+
+------------------------------------------------------------BITACORA 16---------------------------------------------------------------
+
+1-3/10/2026
+
+Reto: XRP Orbit Oddysey-Seguidor de linea velocista-Sumo
+Equipo-XRP-CosmicCore: Victoria, Dante, Lorenzo.
+Equipo-ALV (dividido): Victoria, Lorenzo - Alejo, Johan.
+Equipo-Sumo: No vine, siendo dividido el equipo.
+
+Objetivo:
+-Competir junto a los robots ya preparados anteriormente.
+
+Fotografia:
+
+
+Codigo: 
+- SDL_Velocista_Junio_2026_v4 (Constantemente modificada en competencia)
+- XRP - Pagina web creada en Base44: https://control-xrp-copy-649ec8e5.base44.app
+
+Detalles:
+
+----------------Día jueves 1-10-26:-----------------
+Competencia: XRP Orbit Oddisey                  Base de codigo: python
+Equipo: Dante, Victoria, Lorenzo                Pagina web de control: https://control-xrp-copy-649ec8e5.base44.app
+Nombre: CosmicCore                              Base de creación de la pagina: Base44
+Robots: 2                                       Puesto: 1er lugar.
+
+Bitacora:
+En la mini competencia de XRP, realizada en el Museo del Agua EPM, fuimos parte del evento como una competencia dentro de este, no como proyecto.
+Dentro de esta compitieron 5 equipos de a 3 la mayoría, donde era un todos contra todos, en el equipo con el mayor puntaje ganaba.
+
+
+
+
+
