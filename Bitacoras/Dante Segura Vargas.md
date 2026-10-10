@@ -149,3 +149,12 @@ Esquema/diagrama: nose
 Código: tampocose
 Métricas clave: nose
 Lecciones aprendidas y siguiente ajuste:
+
+
+Bitacora de Dante    Fecha: 10/oct/2026
+Objetivo del reto: decidir los equipos y materiales para el seguidor de linea iti pascual bravo
+Lista de materiales:
+Esquema/diagrama: no se
+Código: tampoco
+Métricas clave: dimensiones maximas 30x20cm, altura libre, sin limite de sensores, 3 vueltas, 2 oportunidades de salir, tiene que estar minimo 85% del trayecto encima, si se sale se devuelve 30 cm de donde estaba
+Lecciones aprendidas y siguiente ajuste:
