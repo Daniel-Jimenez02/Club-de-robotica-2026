@@ -320,7 +320,7 @@ Reflexión: Lo mejor ser lo mas inteligente y estratégico, buscando los huecos 
 
 ----------------Día Sabado 3-10-26:-----------------
 - Competencia: Seguidor de linea velocista_________________Base de código: Arduino
-- Equipo: Victoria, Lorenzo_______________________________Código: 
+- Equipo: Victoria, Lorenzo_______________________________Código: SDL_Velocista_Junio_2026_v4 (Constantemente modificada en competencia)
 - Nombre: ALV 2.O
 - Robots: 1____________________________________________Puesto: Fase 2 - 16 mejores
 
