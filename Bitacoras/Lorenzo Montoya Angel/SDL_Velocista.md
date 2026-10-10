@@ -305,6 +305,13 @@ Bitacora:
 En la mini competencia de XRP, realizada en el Museo del Agua EPM, fuimos parte del evento como una competencia dentro de este, no como proyecto.
 Dentro de esta compitieron 5 equipos de a 3 la mayoría, donde era un todos contra todos, en el equipo con el mayor puntaje ganaba.
 
+Dentro de la competencia según nuestro equipo, notamos que hizo falta realizar mas ensayos con el robot manejándolo, y mejorar ciertos detalles con el control, ademas de que no logramos hacer funcionar el servomotor, ya que este tenia unos picos de energía, que quemaron el 3.3v de dos placas del segundo robot (Dante) y este hace que quede inutilizable el servo, ademas generaba la desconexion del dispositivo al celular constantemente, solucion: una pila de litio conectada directamente a la placa, saltandose el 3.3v quemado.
+
+Durante las primeras rondas el carro de Dante no quizo funcionar correctamente junto al control, generando que apenas un solo robot compitiera.
+
+Para el final de las rondas, en la ultima ronda, se utilizo una estrategia mejor, que proporcionaba mas puntaje, realizando vueltas alrededor de la pista que cada una daba 5 puntos, esto genero que quedáramos en el podio.
+
+Reflexión: Lo mejor ser lo mas inteligente y estratégico, buscando los huecos en el reglamento. Por eso mismo siempre leer muy bien este.
 
 
 
