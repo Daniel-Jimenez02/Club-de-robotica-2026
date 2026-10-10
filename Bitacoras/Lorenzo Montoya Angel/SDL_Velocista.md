@@ -296,10 +296,10 @@ Detalles:
 
 ----------------Día jueves 1-10-26:-----------------
 
-Competencia: XRP Orbit Oddisey                  Base de codigo: python
-Equipo: Dante, Victoria, Lorenzo                Pagina web de control: https://control-xrp-copy-649ec8e5.base44.app
-Nombre: CosmicCore                              Base de creación de la pagina: Base44
-Robots: 2                                       Puesto: 1er lugar.
+- Competencia: XRP Orbit Oddisey__________________Base de codigo: python
+- Equipo: Dante, Victoria, Lorenzo________________Pagina web de control: https://control-xrp-copy-649ec8e5.base44.app
+- Nombre: CosmicCore______________________________Base de creación de la pagina: Base44
+- Robots: 2_______________________________________Puesto: 1er lugar.
 
 Bitacora:
 En la mini competencia de XRP, realizada en el Museo del Agua EPM, fuimos parte del evento como una competencia dentro de este, no como proyecto.
