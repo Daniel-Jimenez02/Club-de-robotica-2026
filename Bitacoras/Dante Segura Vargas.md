@@ -8,9 +8,9 @@ Lecciones aprendidas y siguiente ajuste:
 
 fin de plantilla
 
+----------------------------------------------------
 
-
-Bitacora de Dante    Fecha: 21/2/2026
+# Bitacora de Dante    Fecha: 21/2/2026
 Objetivo del reto: crear un robot sumo empleando el set de lego spike prime para competir el 7 de marzo en una competencia de sumo interna.
 Esquema/diagrama: no aplica para lego
 Código: proyectos
@@ -19,7 +19,7 @@ Lecciones aprendidas y siguiente ajuste: hoy aprendimos a crear un robot con mod
 
 
 
-Bitacora de Dante    Fecha: 28/2/2026
+# Bitacora de Dante    Fecha: 28/2/2026
 Objetivo del reto: mejorar el robot sumo para competir el dia 7 de marzo en la competencia interna de sumo
 Esquema/diagrama: no aplica para lego
 Código: proyectos
@@ -28,7 +28,7 @@ Lecciones aprendidas y siguiente ajuste: aprendimos a programar y a hacer mas gr
 
 
 
-Bitacora de Dante    Fecha: 7/3/2026
+# Bitacora de Dante    Fecha: 7/3/2026
 Objetivo del reto: competir y ganar la competencia interna de sumo lego
 Esquema/diagrama: no aplica para lego
 Código: proyectos
@@ -36,7 +36,7 @@ Métricas clave: no aplica para lego
 Lecciones aprendidas y siguiente ajuste: aprendimos a competir y a una sana convivencia, en esta sesion aprendi que al ayudar a los demas hay que orientarlos y no hacerles, esto me costo una eliminacion en la competencia, tendre que prepararme para los retos para la semana entrante
 
 
-Bitacora de Dante    Fecha: 14/3/2026
+# Bitacora de Dante    Fecha: 14/3/2026
 Objetivo del reto: construir un termometro funcional con arduino y sensor dht11 que muestre  la temperatura y un grafico en el monitor serial
 Esquema/diagrama: capturas de esquematicos/Dante/termometro dht11, termometro dht11 2
 Código: proyectos/Termometro Dante
