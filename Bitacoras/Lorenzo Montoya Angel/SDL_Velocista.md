@@ -295,6 +295,7 @@ Codigo:
 Detalles:
 
 ----------------Día jueves 1-10-26:-----------------
+
 Competencia: XRP Orbit Oddisey                  Base de codigo: python
 Equipo: Dante, Victoria, Lorenzo                Pagina web de control: https://control-xrp-copy-649ec8e5.base44.app
 Nombre: CosmicCore                              Base de creación de la pagina: Base44
