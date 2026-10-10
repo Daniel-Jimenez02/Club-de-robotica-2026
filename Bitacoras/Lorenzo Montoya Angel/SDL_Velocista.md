@@ -78,8 +78,8 @@ Objetivo:
 -Finalizar Robot, Hacer pruebas.
 
 Fotografia:
-<img width="2635" height="1483" alt="20261003_125745" src="https://github.com/user-attachments/assets/ecf1bb01-dd92-468f-ba38-fefb4ea65634" />
 
+<img width="620" height="325" alt="20261003_125745" src="https://github.com/user-attachments/assets/ecf1bb01-dd92-468f-ba38-fefb4ea65634" />
 
 Codigo: 
 SDL_Velocista_Junio_2026_v1
@@ -192,8 +192,6 @@ Fotografia:
 
 <img width="773" height="380" alt="Captura de pantalla 2026-09-05 230305" src="https://github.com/user-attachments/assets/084adbef-7c51-4277-a4f3-0eea7548710d" />
 
-
-
 Reflexion: 
 Se aprendio lo basico, y se decidio seguir el tema a final de año.
 
@@ -212,8 +210,6 @@ Objetivo:
 Fotografia:
 
 <img width="275" height="311" alt="Captura de pantalla 2026-09-05 230104" src="https://github.com/user-attachments/assets/482218cf-98f2-408b-89d4-24045931b800" />
-
-
 
 Codigo: 
 No hay.
@@ -235,10 +231,9 @@ Objetivo:
 -Trabajar y avanzar en el robot XRP y mejorar códigos.
 
 Fotografia:
-<img width="2635" height="1483" alt="20261003_125745" src="https://github.com/user-attachments/assets/ecf1bb01-dd92-468f-ba38-fefb4ea65634" />
-<img width="605" height="1310" alt="20260912_102204" src="https://github.com/user-attachments/assets/7b56455f-761d-41dc-b598-c56779f062e2" />
 
-
+<img width="620" height="325" alt="20261003_125745" src="https://github.com/user-attachments/assets/ecf1bb01-dd92-468f-ba38-fefb4ea65634" />
+<img width="150" height="300" alt="20260912_102204" src="https://github.com/user-attachments/assets/7b56455f-761d-41dc-b598-c56779f062e2" />
 
 Codigo: 
 SDL_Velocista_Junio_2026_v1
@@ -260,10 +255,9 @@ Objetivo:
 -Trabajar y avanzar en el robot XRP y mejorar códigos.
 
 Fotografia:
-<img width="2635" height="1483" alt="20261003_125745" src="https://github.com/user-attachments/assets/ecf1bb01-dd92-468f-ba38-fefb4ea65634" />
-<img width="605" height="1310" alt="20260912_102204" src="https://github.com/user-attachments/assets/7b56455f-761d-41dc-b598-c56779f062e2" />
 
-
+<img width="620" height="325" alt="20261003_125745" src="https://github.com/user-attachments/assets/ecf1bb01-dd92-468f-ba38-fefb4ea65634" />
+<img width="150" height="300" alt="20260912_102204" src="https://github.com/user-attachments/assets/7b56455f-761d-41dc-b598-c56779f062e2" />
 
 Codigo: 
 SDL_Velocista_Junio_2026_v1
