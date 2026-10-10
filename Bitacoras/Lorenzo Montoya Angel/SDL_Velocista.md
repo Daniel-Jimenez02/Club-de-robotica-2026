@@ -290,6 +290,9 @@ Objetivo:
 
 Fotografia:
 
+<img width="200" height="300" alt="20261003_105137" src="https://github.com/user-attachments/assets/99266e35-3aea-4612-ad94-b442d9a57200" />
+<img width="600" height="300" alt="20261001_093637" src="https://github.com/user-attachments/assets/259757bb-cd7d-4662-a801-5c7e378f4689" />
+
 
 Codigo: 
 - SDL_Velocista_Junio_2026_v4 (Constantemente modificada en competencia)
