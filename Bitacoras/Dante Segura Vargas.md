@@ -1,3 +1,4 @@
+------------------------------------------------------------------------------------------------
 Plantilla, no mirar
 Bitacora de Dante    Fecha: dia/mes/2026
 Objetivo del reto: 
@@ -8,7 +9,7 @@ Lecciones aprendidas y siguiente ajuste:
 
 fin de plantilla
 
-----------------------------------------------------
+------------------------------------------------------------------------------------------------
 
 # Bitacora de Dante    Fecha: 21/2/2026
 Objetivo del reto: crear un robot sumo empleando el set de lego spike prime para competir el 7 de marzo en una competencia de sumo interna.
@@ -17,7 +18,7 @@ Código: proyectos
 Métricas clave: no aplica para lego
 Lecciones aprendidas y siguiente ajuste: hoy aprendimos a crear un robot con modificaciones, el codigo esta casoi listo, el sensor ultrasonido no funciono entonces debemos hacer adaptaciones para que funcione solo con sensores de presion, es decirla proxima clase hay que terminar el codigoy terminar el robot
 
-
+------------------------------------------------------------------------------------------------
 
 # Bitacora de Dante    Fecha: 28/2/2026
 Objetivo del reto: mejorar el robot sumo para competir el dia 7 de marzo en la competencia interna de sumo
@@ -26,7 +27,7 @@ Código: proyectos
 Métricas clave: no aplica para lego
 Lecciones aprendidas y siguiente ajuste: aprendimos a programar y a hacer mas grande y ponerle al robot cosas que afecten a los demas, el siguiente ajuste seria competir, ya que no creo que necesite mas modificaciones mayores
 
-
+------------------------------------------------------------------------------------------------
 
 # Bitacora de Dante    Fecha: 7/3/2026
 Objetivo del reto: competir y ganar la competencia interna de sumo lego
@@ -35,6 +36,7 @@ Código: proyectos
 Métricas clave: no aplica para lego
 Lecciones aprendidas y siguiente ajuste: aprendimos a competir y a una sana convivencia, en esta sesion aprendi que al ayudar a los demas hay que orientarlos y no hacerles, esto me costo una eliminacion en la competencia, tendre que prepararme para los retos para la semana entrante
 
+------------------------------------------------------------------------------------------------
 
 # Bitacora de Dante    Fecha: 14/3/2026
 Objetivo del reto: construir un termometro funcional con arduino y sensor dht11 que muestre  la temperatura y un grafico en el monitor serial
@@ -46,8 +48,9 @@ referencias: https://programarfacil.com/blog/arduino-blog/sensor-dht11-temperatu
 https://www.prometec.net/serial-plotter/
 https://www.instructables.com/Ultimate-Guide-to-Adruino-Serial-Plotter/
 
+------------------------------------------------------------------------------------------------
 
-Bitacora de Dante    Fecha: 21/3/2026
+# Bitacora de Dante    Fecha: 21/3/2026
 Objetivo del reto: elegir un reto para participar en robojam y cuadrar los equipos(escogi el reto stackin y por ahora estoy solo)
 Esquema/diagrama: capturas esquematicos/Dante Robot stackin robojam mayo 2026
 Código: no aplica aun
@@ -55,63 +58,77 @@ Métricas clave: 100x70 cm pista, 20x14 zonas de descarga(4) una en cada esquina
 Lecciones aprendidas y siguiente ajuste: hoy aprendi a escoger un reto y mejore mis habilidades para crear esquematicos en fritzing, aprendi a hacer una garra robotica con un servo y diseñe el mecanismo del robot
 Lista de materiales: 1 esp32 38 pines, puente h l298n, 2 servos sg90 o mg90s, un interruptor, 2 baterias 18650, una carcasa para poner las baterias, 4 motores, un cargador de baterias, una baquela y un diseño de garra publicado en diseños para imprimir o cortar/Dante/stackin robojam nations mayo 2026
 
+------------------------------------------------------------------------------------------------
 
-Bitacora de Dante    Fecha: 28/mar/2026
+# Bitacora de Dante    Fecha: 28/mar/2026
 Objetivo del reto: hacer el diseño y el esquematico para stackin en robojam
 Esquema/diagrama: capturas de esquematicos/Dante/Robot stackin robojam mayo 2026.png
 Código: todavia no
 Métricas clave: no se
 Lecciones aprendidas y siguiente ajuste: Empece a construir el robot, aprendi a organizar los esquematicos en fritzing y la siguiente clase debo continuar con la construccion 
 
-Bitacora de Dante    Fecha: 11/abr/2026
+------------------------------------------------------------------------------------------------
+
+# Bitacora de Dante    Fecha: 11/abr/2026
 Objetivo del reto: terminar de construir la base del robot
 Esquema/diagrama: capturas de esquematicos/Dante/Robot stackin robojam mayo 2026.png
 Código: aun no
 Métricas clave: no se
 Lecciones aprendidas y siguiente ajuste: terminar el robot la siguiente clase, diseñar la garra y hacerla, hacer las conexiones al essp 32 y comenzar a programarlo
 
-Bitacora de Dante    Fecha: 18/abr/2026
+------------------------------------------------------------------------------------------------
+
+# Bitacora de Dante    Fecha: 18/abr/2026
 Objetivo del reto: construir el robot para participar en robojam
 Esquema/diagrama: capturas de esquematicos/Dante/Robot stackin robojam mayo 2026.png
 Código: aun no
 Métricas clave: todavia no
 Lecciones aprendidas y siguiente ajuste: hoy cambiamos la carcasa anterior del robot por una nueva mas facil de usar y le pusimos la mayoria de cosas, en la siguiente clase le pondremos el segundo piso y probaremos la garra
 
-Bitacora de Dante    Fecha: 25/abr/2026
+------------------------------------------------------------------------------------------------
+
+# Bitacora de Dante    Fecha: 25/abr/2026
 Objetivo del reto: construir el robot para participar en robojam
 Esquema/diagrama: capturas de esquematicos/Dante/Robot stackin robojam mayo 2026.png
 Código: aun no
 Métricas clave: todavia no
 Lecciones aprendidas y siguiente ajuste: la proxima clase, traere impresa en 3d la garra y la pondremos y empezare a programar el robot
 
+------------------------------------------------------------------------------------------------
 
-Bitacora de Dante    Fecha: 9/may/2026
+# Bitacora de Dante    Fecha: 9/may/2026
 Objetivo del reto: programar y terminar el robot para participar en robojam
 Esquema/diagrama: capturas de esquematicos/Dante/Robot stackin robojam mayo 2026.png
 Código: aun no
 Métricas clave: todavia no
 Lecciones aprendidas y siguiente ajuste: aprendimos a no mover mucho el robot, nos falto terminarlo y el codigo tambien
 
-Bitacora de Dante    Fecha: 16/may/2026
+------------------------------------------------------------------------------------------------
+
+# Bitacora de Dante    Fecha: 16/may/2026
 Objetivo del reto: programar y terminar el robot para participar en robojam
 Esquema/diagrama: capturas de esquematicos/Dante/Robot stackin robojam mayo 2026.png
 Código: /Proyectos/stackin Dante/robojam_2026_stackin.ino.ino
 Métricas clave: todavia no
 Lecciones aprendidas y siguiente ajuste: hoy terminamos entre comillas el robot, se nos daño el servo de la garra entonces toca venir en semana a reemplazarlo y a finalizar unos detalles
 
-Bitacora de Dante    Fecha: 20/jun/2026
+------------------------------------------------------------------------------------------------
+
+# Bitacora de Dante    Fecha: 20/jun/2026
 Objetivo del reto: empezar el seguidor de linea 
 Esquema/diagrama: no se
 Código: todavia no
 Métricas clave: no se
 Lecciones aprendidas y siguiente ajuste: aprendimos a calibrar mejor los sensores y a conectar la raspberry pi pico al arduino ide, toca terminar el robot
 
-Bitacora de Dante    Fecha: 4/jul/2026
+------------------------------------------------------------------------------------------------
+
+# Bitacora de Dante    Fecha: 4/jul/2026
 Objetivo del reto: terminar el seguidor de linea
 Esquema/diagrama: no se
 Código: todavia no
 Métricas clave: no se
-[Lecciones aprendidas y siguiente ajuste: probar/testear el equipo con el que tranajamos antes de armar el robot para verificar que todo funcione
+Lecciones aprendidas y siguiente ajuste: probar/testear el equipo con el que tranajamos antes de armar el robot para verificar que todo funcione
   Lista de materiales:
   -Chasis
   -Raspberry + expansión.
@@ -121,40 +138,65 @@ Métricas clave: no se
   -Motores x2
   -portabaterías x1
   -interruptor x1]
-Bitacora de Dante    Fecha: del 11/jul/2026 al 15/ago/2026
+
+------------------------------------------------------------------------------------------------
+  
+# Bitacora de Dante    Fecha: del 11/jul/2026 al 15/ago/2026
 Objetivo del reto: no me acuerdo exactamente, pero la mayoria era terminar el sumo y el seguidor de linea
 Esquema/diagrama: nose
 Código: tampoco
 Métricas clave: las reglas respectivas de cada robot
 Lecciones aprendidas y siguiente ajuste: aprendimos que no sabemos hacer las cosas con seriedad y que cuando algo funciona bien a la otra clase ya no :)
 
-Bitacora de Dante    Fecha: 15/ago/2026
+------------------------------------------------------------------------------------------------
+
+# Bitacora de Dante    Fecha: 15/ago/2026
 Objetivo del reto: empezar el xrp e introduccion a python
 Esquema/diagrama: 
 Código: 
 Métricas clave: 
 Lecciones aprendidas y siguiente ajuste: aprendimos las cosas basicas de python, hay que seguir trabajando en python y hacer la tarea que nos dejaron
 
+------------------------------------------------------------------------------------------------
 
-Bitacora de Dante    Fecha: 22/ago/2026
+# Bitacora de Dante    Fecha: 22/ago/2026
 Objetivo del reto: ver python y arreglar el sumo
 Esquema/diagrama: 
 Código: 
 Métricas clave: 
 Lecciones aprendidas y siguiente ajuste: aprendimos que los motores por alguna razon hacen corto por existir, decidimos que el xrp va a ser con bloques y como no terminamos el sumo toca ir en semana
 
-Bitacora de Dante    Fecha: 5/sep/2026
+------------------------------------------------------------------------------------------------
+
+# Bitacora de Dante    Fecha: 5/sep/2026
 Objetivo del reto: hacer el xrp y ordenarnos en seguidor de linea, ya que no organizamos bien los equipos y tocó cambiarlos, nos dieron tiempo para organizar los nuevos equipos y areglar y decidir cosas con los robots, luego la idea es terminar el radiocontrol del xrp y ya
 Esquema/diagrama: nose
 Código: tampocose
 Métricas clave: nose
 Lecciones aprendidas y siguiente ajuste:
 
+------------------------------------------------------------------------------------------------
 
-Bitacora de Dante    Fecha: 10/oct/2026
+# Bitacora de Dante    Fecha: 10/oct/2026
 Objetivo del reto: decidir los equipos y materiales para el seguidor de linea iti pascual bravo
 Lista de materiales:
+x1 Raspberry pi pico 2w
+x1 Shield raspberry pi pico
+x1 Regleta polulu qtr hd 15a
+x1 Multiplexor analogico de 16 pines
+x1 Puente h DVR8833
+x2 Motores n20 1000rpm
+x1 Chasis modificado seguidor
+x1 Lipo 7,4v
+x1 Step down mini360
+x2 Brackets motor n20
+conectores macho para soldar
+Tornillos, tuercas y separadores
+Cables variados
+
 Esquema/diagrama: no se
 Código: tampoco
 Métricas clave: dimensiones maximas 30x20cm, altura libre, sin limite de sensores, 3 vueltas, 2 oportunidades de salir, tiene que estar minimo 85% del trayecto encima, si se sale se devuelve 30 cm de donde estaba
 Lecciones aprendidas y siguiente ajuste:
+
+------------------------------------------------------------------------------------------------
