@@ -1,10 +1,14 @@
 Objetivos:
+Lograr competir el dia 30 de Octubre en la universidad Pascual Bravo en la categoría Robot Sumo de 500-1000g
+Mejorar la elaboracion de nuestro robot Sumo con el cual competimos el día 2 de Octubre y salimos Campeones en la biblioteca EPM
+Diseñar un robot sumo de 20x20 con un componente ESP-32, 4 motores, 4 sensores infra-rojos y 2 sensores ultrasonidos
+
 Lista de materiales:
 ESP 32
-Dos ultrasonidos
-Cuatro Motores
-Cuatro llantas
-6 sensores infrarojos
+2 ultrasonidos
+4 Motores
+4 llantas
+4 sensores infrarojos
 Cables macho-macho,macho-hembra y hembra-hembra
 Tornileria
 2 bases
@@ -14,3 +18,12 @@ Cinta aislante
 2 swiches
 4 bases para motores
 2 bases para ultrasonidos
+
+10/10/2026
+El día de hoy hicimos la elección e inscripcion de nuestro equipo para la competencia del 30 de octubre
+Dialogamos el tipo de estructura que vamos a usar en la competencia, teniendo en cuentas las reglas y los componentes que vamos a usaren la construcción
+
+14/10/2026
+El día de hoy mi equipo y yo fuimos a adelantar una parte de el robot
+Terminamos de pegar los componentes a la placa y empezamos a realizar las conexiones
+Logramos resultados muy satisfactorios ya que dejamos a el robot prendiendo y con las soldaduras ya hechas
