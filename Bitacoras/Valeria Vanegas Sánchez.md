@@ -30,3 +30,17 @@ Bitacora del 18 de Abril de 2026: El día de hoy continuamos con la misma realiz
 Bitacora del 25 de Abril de 2026: El día de hoy concluimos con las conexiones necesarias para el robot jam y empezamos a mirar la estructura de el código necesario para poder implemtarle a el robot,además dejamos para la próxima sesión vetificar el movimiento del robot y hacer ensayos con la garra que hay que implementarle.
 
 Bitacora del 9 de mayo de 2026: El día de hoy mi equipo y yo nos encargamos de por un un lado empezar la construcción de una garra con servos y sus conexiones,mientras que a la vez haciamos el código de movimiento y acomodabamos bien las conexiones hechas en la sección anterior,en general obtuvimos resultados satisfactorios ya que logramos darle movimiento a el robot. Esperamos poder tener una sección entre semana para ese día enfocarnos en la implementación y experimentación con la garra, para dejar la última sección la siguiente semana para retocar detalles y la creación de un código final para la competencia.
+
+Experiencias en las diferentes competencias de octubre:
+
+​XRP- jueves 01 de octubre 
+​En la competencia de XRP no me sentí tan comprometida como debía, y al final eso se notó en los resultados,siento que me faltó mucha práctica para aprender a manejar bien el robot a control remoto y estar más metida en el trabajo en equipo; de hecho, me costó coordinarme porque, mientras yo tenía que ir armando otros robots, mi compañero avanzaba solo en la parte de XRP.
+¿Qué aprendí de ello? De esto aprendí que dividir la atención de esa manera rompe el ritmo y que el dominio del control exige constancia. Lo que debo mejorar para la próxima es comprometerme por completo con un solo rol, practicar más el pilotaje y asegurar una mejor comunicación con mi compañero desde el inicio para no quedar desconectada.
+
+SUMO- viernes 02 de octubre 
+​El torneo de sumo fue todo un disturbio para mí, porqué aunque siento que se había logrado un buen trabajo previo, el día de la competencia todo cambió por problemas externos, ya que casi todos los equipos del club EPM quedamos revueltos y terminé compitiendo con un robot que originalmente no era el mío. 
+¿Qué aprendí de ello? De esto aprendí que para futuras participaciones debo mejorar el control de los tiempos de preparación y desarrollar una capacidad de adaptación rápida para mantener la calma ante imprevistos de última hora. 
+
+SEGUIDOR DE LÍNEA- sábado 03 de octubre 
+Esta fue mi primera participación en la categoría de seguidor de línea,pero me pasó casi lo mismo que en sumo, me cambiaron de equipo y terminé compitiendo con un robot que no era mío, por lo que esta situación me obligó a adaptarme a un hardware desconocido, mostrándome que la calibración de los sensores frente a variables externas cambia completamente el rendimiento.
+¿Qué aprendí de ello? De esto aprendí que cuando te toca competir con un prototipo que no construiste, debes tomarte el tiempo de entender rápido cómo responde la electrónica, la lectura de los sensores antes de confiarte en el recorrido y no frustrarse antes de intentar solucionar el problema o hacer el intento.
