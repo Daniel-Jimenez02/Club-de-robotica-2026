@@ -198,5 +198,6 @@ Esquema/diagrama: no se
 Código: tampoco
 Métricas clave: dimensiones maximas 30x20cm, altura libre, sin limite de sensores, 3 vueltas, 2 oportunidades de salir, tiene que estar minimo 85% del trayecto encima, si se sale se devuelve 30 cm de donde estaba
 Lecciones aprendidas y siguiente ajuste:
+Reflexión torneos: yo considero que nos fue bien, falto considerar cosas en las reglas como la pista pequeña del sumo y los cambios de luz del seguidor de linea, me parece que me fue muy bien porque aunque no gané el sumo ni el seguidor de linea, considero que aprendí muchas cosas y gané experiencia en el proceso
 
 ------------------------------------------------------------------------------------------------
