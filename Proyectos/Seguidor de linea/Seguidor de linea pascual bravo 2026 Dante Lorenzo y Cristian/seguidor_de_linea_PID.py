@@ -14,7 +14,7 @@ kd = 1
 ki = 1
 
 # Motores
-MOT_IZQ = (PWM(Pin(10)), PWM(Pin(11)))   
+MOT_IZQ = (PWM(Pin(14)), PWM(Pin(15)))   
 MOT_DER = (PWM(Pin(12)), PWM(Pin(13)))
 for p in MOT_IZQ:
     p.freq(1000)
@@ -95,3 +95,8 @@ def parar():
     motor(MOT_IZQ, 0)
     motor(MOT_DER, 0)
     
+def correr():
+    while True:
+        error = posicion()
+        u = kp * error
+        conducir(u)
