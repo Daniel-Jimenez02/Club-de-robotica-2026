@@ -1,8 +1,10 @@
-from machine import Pin, ADC, PWM   # <- UNA sola línea reemplaza tus 3 imports
+# Codigo PID seguidor de linea pascual bravo 2026
+# Dante Lorenzo y Cristian(Los ganadores espero)
+from machine import Pin, ADC, PWM
 import time
 
 # Variables y pines(van hasta funciones)
-LED = Pin("LED", Pin.OUT) # Led para calibracion
+LED = Pin("LED", Pin.OUT) # Led para calibracion de sensores, integrado de la pico
 velocidad_base = 0.5
 velocidad_max = 0.95
 regleta = [0] * 15
