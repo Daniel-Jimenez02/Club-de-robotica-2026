@@ -13,7 +13,7 @@ maximos = [0] * 15
 # Variables PID(Dani espero que este bueno, sino me pones comentario en el github para saber como hacerlo)
 kp = 1
 kd = 1
-ki = 1
+ki = 0
 
 # Motores
 MOT_IZQ = (PWM(Pin(14)), PWM(Pin(15)))   
@@ -76,7 +76,7 @@ def normalizar():
             valores_normales[i] = 0
         else:                                 
             valores_normales[i] = (regleta[i] - minimos[i]) * 1000 // (maximos[i] - minimos[i])
-        if valores_normales[i] < 0: valores_normales[i] = 0      # clamps (afuera, para todos)
+        if valores_normales[i] < 0: valores_normales[i] = 0      
         if valores_normales[i] > 1000: valores_normales[i] = 1000
     return valores_normales
 def posicion():
@@ -98,7 +98,22 @@ def parar():
     motor(MOT_DER, 0)
     
 def correr():
+    error_anterior = 0.0
+    t_prev = time.ticks_ms()
+    integral = 0.0
+    limite_i = 0.4
     while True:
         error = posicion()
-        u = kp * error
+        if error is None:      
+            error = 0.0   
+        t_ahora = time.ticks_ms()
+        dt = time.ticks_diff(t_ahora, t_prev) / 1000.0
+        t_prev = t_ahora
+        derivada = error - error_anterior
+        integral = integral + error * dt
+        if integral > limite_i:  integral = limite_i      
+        if integral < -limite_i: integral = -limite_i    
+        u = kp * error + kd * derivada + ki * integral
+        error_anterior = error
         conducir(u)
+        print("Error:", error, "Derivada:", derivada, "u:", u)
