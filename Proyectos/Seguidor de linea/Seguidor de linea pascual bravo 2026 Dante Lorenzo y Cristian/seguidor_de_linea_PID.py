@@ -1,5 +1,5 @@
 # Codigo PID seguidor de linea pascual bravo 2026
-# Dante Lorenzo y Cristian(Los ganadores espero)
+# Dante, Lorenzo y Cristian(Los ganadores espero)
 from machine import Pin, ADC, PWM
 import time
 #-------------------------------------------------------
@@ -16,15 +16,18 @@ maximos = [0] * 15
 
 #-------------------------------------------------------
 # Variables PID(Dani espero que este bueno, sino me pones comentario en el github para saber como hacerlo)
-#------------------------------------------------------
+#-------------------------------------------------------
 
 kp = 1
-kd = 1
+kd = 0.01
 ki = 0
+
+
+ultimo_error = 0.0 # Esta es por si se sale de la linea para que la vuelva a coger
 
 #-------------------------------------------------------
 #                     Motores
-#------------------------------------------------------
+#-------------------------------------------------------
 
 MOT_IZQ = (PWM(Pin(14)), PWM(Pin(15)))   
 MOT_DER = (PWM(Pin(13)), PWM(Pin(12)))
@@ -45,7 +48,8 @@ def motor(m, v):
         atras.duty_u16(duty)
 #-------------------------------------------------------
 #                  Multiplexor
-#------------------------------------------------------
+#-------------------------------------------------------
+
 mux_s0 = Pin(2, Pin.OUT)    
 mux_s1 = Pin(3, Pin.OUT)
 mux_s2 = Pin(4, Pin.OUT)
@@ -89,8 +93,8 @@ def calibrar():
             if regleta[i] > maximos[i]: maximos[i] = regleta[i]
         time.sleep_ms(50)
     LED.off()
-    print('Minimos:', minimos)
-    print('Maximos:', maximos)
+    #print('Minimos:', minimos)
+    #print('Maximos:', maximos)
     
     
 def presionar_boton():
@@ -118,13 +122,18 @@ def normalizar():
 #-------------------------------------------------------
 #            Movimiento y calculo de posicion
 #-------------------------------------------------------
+
 def posicion():
-    limite_peso = 80
+    global ultimo_error
+    limite_peso = 150
     valores = normalizar()
     peso = sum(valores)
-    if peso < limite_peso: return None
+    if peso < limite_peso: 
+        return None
     centro = sum(i * valores[i] for i in range(15)) / peso
-    return (centro - 7.0) / 7.0
+    error_calculado = (centro - 7.0) / 7.0
+    ultimo_error = error_calculado
+    return error_calculado
 
 
 def conducir(u):
@@ -146,29 +155,36 @@ def parar():
 
 def correr():
     error_anterior = 0.0
-    t_prev = time.ticks_ms()
+    t_prev = time.ticks_us()
     integral = 0.0
     limite_i = 0.4
     while True:
         error = posicion()
         if error is None:      
-            error = 0.0   
-        t_ahora = time.ticks_ms()
-        dt = time.ticks_diff(t_ahora, t_prev) / 1000.0
+            if ultimo_error > 0:
+                error = 1 
+            else:
+                error = -1  
+        t_ahora = time.ticks_us()
+        dt = time.ticks_diff(t_ahora, t_prev) / 1000000.0
         t_prev = t_ahora
-        derivada = error - error_anterior
+        derivada = (error - error_anterior) / dt
         integral = integral + error * dt
         if integral > limite_i:  integral = limite_i      
         if integral < -limite_i: integral = -limite_i    
         u = kp * error + kd * derivada + ki * integral
         error_anterior = error
         conducir(u)
-        print("Error:", error, "Derivada:", derivada, "u:", u)
+        #print("Error:", error, "Derivada:", derivada, "u:", u)
         
 #-------------------------------------------------------
-#                       Main
+#            Llamado de funciones y espera
 #-------------------------------------------------------
 
 presionar_boton()
 calibrar()
+for i in range(5, 0, -1):  
+    LED.toggle()
+    time.sleep(1)
+LED.off()
 correr()
