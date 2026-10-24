@@ -2,20 +2,30 @@
 # Dante Lorenzo y Cristian(Los ganadores espero)
 from machine import Pin, ADC, PWM
 import time
+#-------------------------------------------------------
+#      Variables y pines(van hasta funciones)
+#-------------------------------------------------------
 
-# Variables y pines(van hasta funciones)
+Boton = Pin(6, Pin.IN, Pin.PULL_UP) # Boton para calibracion de sensores
 LED = Pin("LED", Pin.OUT) # Led para calibracion de sensores, integrado de la pico
 velocidad_base = 0.5
 velocidad_max = 0.95
 regleta = [0] * 15
 minimos = [65535] * 15
 maximos = [0] * 15
+
+#-------------------------------------------------------
 # Variables PID(Dani espero que este bueno, sino me pones comentario en el github para saber como hacerlo)
+#------------------------------------------------------
+
 kp = 1
 kd = 1
 ki = 0
 
-# Motores
+#-------------------------------------------------------
+#                     Motores
+#------------------------------------------------------
+
 MOT_IZQ = (PWM(Pin(14)), PWM(Pin(15)))   
 MOT_DER = (PWM(Pin(12)), PWM(Pin(13)))
 for p in MOT_IZQ:
@@ -23,7 +33,6 @@ for p in MOT_IZQ:
 for p in MOT_DER:
     p.freq(1000)
 def motor(m, v):
-    """m = (Pin_adelante, Pin_atras) del motor. v = -1.0 a 1.0"""
     if v > 1.0: v = 1.0        
     if v < -1.0: v = -1.0
     duty = int(abs(v) * 65535) 
@@ -34,15 +43,24 @@ def motor(m, v):
     else:
         adelante.duty_u16(0)
         atras.duty_u16(duty)
-
-# Multiplexor
+#-------------------------------------------------------
+#                  Multiplexor
+#------------------------------------------------------
 mux_s0 = Pin(2, Pin.OUT)    
 mux_s1 = Pin(3, Pin.OUT)
 mux_s2 = Pin(4, Pin.OUT)
 mux_s3 = Pin(5, Pin.OUT)
 mux_sig = ADC(Pin(26)) 
 
-# Funciones
+#-------------------------------------------------------
+#                    Funciones
+#-------------------------------------------------------
+
+
+#-------------------------------------------------------
+#                  Leer sensores
+#-------------------------------------------------------
+
 def leer_sensor(canal):
     mux_s0.value(canal & 0x01)
     mux_s1.value((canal >> 1) & 0x01)
@@ -51,10 +69,15 @@ def leer_sensor(canal):
     time.sleep_us(10)
     return mux_sig.read_u16()
 
+
 def leer_todos_sensores():
     for i in range(15):
         regleta[i] = leer_sensor(i)
     return regleta
+
+#-------------------------------------------------------
+#          Calibracion, normalizacion y boton
+#-------------------------------------------------------
 
 def calibrar():
     t0 = time.ticks_ms()
@@ -68,6 +91,18 @@ def calibrar():
     LED.off()
     print('Minimos:', minimos)
     print('Maximos:', maximos)
+    
+    
+def presionar_boton():
+    while Boton.value() == 1:      
+        LED.toggle()               
+        time.sleep_ms(200)
+    time.sleep_ms(20)              
+    while Boton.value() == 0:      
+        time.sleep_ms(10)
+    LED.off()
+
+
 def normalizar():
     leer_todos_sensores()
     valores_normales = [0] * 15
@@ -79,6 +114,10 @@ def normalizar():
         if valores_normales[i] < 0: valores_normales[i] = 0      
         if valores_normales[i] > 1000: valores_normales[i] = 1000
     return valores_normales
+
+#-------------------------------------------------------
+#            Movimiento y calculo de posicion
+#-------------------------------------------------------
 def posicion():
     limite_peso = 80
     valores = normalizar()
@@ -86,6 +125,8 @@ def posicion():
     if peso < limite_peso: return None
     centro = sum(i * valores[i] for i in range(15)) / peso
     return (centro - 7.0) / 7.0
+
+
 def conducir(u):
     izq = velocidad_base + u
     der = velocidad_base - u
@@ -93,10 +134,16 @@ def conducir(u):
     if der > velocidad_max: der = velocidad_max
     motor(MOT_IZQ, izq)
     motor(MOT_DER, der)
+    
+    
 def parar():
     motor(MOT_IZQ, 0)
     motor(MOT_DER, 0)
-    
+
+#-------------------------------------------------------
+#                        PID
+#-------------------------------------------------------
+
 def correr():
     error_anterior = 0.0
     t_prev = time.ticks_ms()
@@ -117,3 +164,11 @@ def correr():
         error_anterior = error
         conducir(u)
         print("Error:", error, "Derivada:", derivada, "u:", u)
+        
+#-------------------------------------------------------
+#                       Main
+#-------------------------------------------------------
+
+presionar_boton()
+calibrar()
+correr()
