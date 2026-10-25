@@ -201,10 +201,11 @@ Lecciones aprendidas y siguiente ajuste:
 Reflexión torneos: yo considero que nos fue bien, falto considerar cosas en las reglas como la pista pequeña del sumo y los cambios de luz del seguidor de linea, me parece que me fue muy bien porque aunque no gané el sumo ni el seguidor de linea, considero que aprendí muchas cosas y gané experiencia en el proceso
 
 ------------------------------------------------------------------------------------------------
-# Bitacora de Dante    Fecha: dia/mes/2026
-Objetivo del reto: 
-Esquema/diagrama: 
-Código: 
-Métricas clave: 
-Lecciones aprendidas y siguiente ajuste:
+# Bitacora de Dante    Fecha: 17-24/oct/2026
+Objetivo del reto:  Terminar el seguidor de linea pascual bravo 2026
+Esquema/diagrama: no hay
+Código: Proyectos/Seguidor de linea/Seguidor de linea pascual bravo 2026 Dante Lorenzo y Cristian/seguidor_de_linea_PID.py 
+Métricas clave: kp, kd, ki, velocidad, calibracion
+Lecciones aprendidas y siguiente ajuste: hoy aprendimos a empezar a calibrar el PID, a pegar filamento con acido clorometanico(se que era de cloro pero no me acuerdo del otro compuesto), a organizar bien los cables y a usar bien el tiempo, ya toca en semana toca terminar de calibrar y organizar el PID para el torneo y el seguidor tambien
+
 ------------------------------------------------------------------------------------------------
