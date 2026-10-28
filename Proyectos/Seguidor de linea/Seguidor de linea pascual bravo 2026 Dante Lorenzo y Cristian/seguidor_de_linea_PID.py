@@ -9,7 +9,7 @@ import time
 Boton = Pin(6, Pin.IN, Pin.PULL_UP) # Boton para calibracion de sensores
 LED = Pin("LED", Pin.OUT) # Led para calibracion de sensores, integrado de la pico
 velocidad_base = 0.5
-velocidad_max = 0.95
+velocidad_max = 0.75
 regleta = [0] * 15
 minimos = [65535] * 15
 maximos = [0] * 15
@@ -19,7 +19,7 @@ maximos = [0] * 15
 #-------------------------------------------------------
 
 kp = 1
-kd = 0.01
+kd = 0.07
 ki = 0
 
 
@@ -132,7 +132,8 @@ def posicion():
         return None
     centro = sum(i * valores[i] for i in range(15)) / peso
     error_calculado = (centro - 7.0) / 7.0
-    ultimo_error = error_calculado
+    if error_calculado > 0.05 or error_calculado < -0.05:
+        ultimo_error = error_calculado
     return error_calculado
 
 
@@ -158,13 +159,17 @@ def correr():
     t_prev = time.ticks_us()
     integral = 0.0
     limite_i = 0.4
+    no_ve_linea = False
     while True:
         error = posicion()
-        if error is None:      
-            if ultimo_error > 0:
-                error = 1 
-            else:
-                error = -1  
+        if error is None:          # RADAR: giro directo al ultimo lado, sin PID
+            t_prev = time.ticks_us()          # reloj fresco
+            conducir(1.2 if ultimo_error > 0 else -1.2)
+            ciego = True
+            continue
+        if ciego:                 
+            error_anterior = error
+            ciego = False
         t_ahora = time.ticks_us()
         dt = time.ticks_diff(t_ahora, t_prev) / 1000000.0
         t_prev = t_ahora
