@@ -75,8 +75,8 @@ def leer_sensor(canal):
 
 
 def leer_todos_sensores():
-    for i in range(15):
-        regleta[i] = leer_sensor(i)
+    for canal in range(15):
+        regleta[14 - canal] = leer_sensor(canal)
     return regleta
 
 #-------------------------------------------------------
@@ -155,6 +155,7 @@ def parar():
 #-------------------------------------------------------
 
 def correr():
+    global ultimo_error
     error_anterior = 0.0
     t_prev = time.ticks_us()
     integral = 0.0
@@ -162,14 +163,14 @@ def correr():
     no_ve_linea = False
     while True:
         error = posicion()
-        if error is None:          # RADAR: giro directo al ultimo lado, sin PID
-            t_prev = time.ticks_us()          # reloj fresco
+        if error is None:          
+            t_prev = time.ticks_us()          
             conducir(1.2 if ultimo_error > 0 else -1.2)
-            ciego = True
+            no_ve_linea = True
             continue
-        if ciego:                 
+        if no_ve_linea:                 
             error_anterior = error
-            ciego = False
+            no_ve_linea = False
         t_ahora = time.ticks_us()
         dt = time.ticks_diff(t_ahora, t_prev) / 1000000.0
         t_prev = t_ahora
