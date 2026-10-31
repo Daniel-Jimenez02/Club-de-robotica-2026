@@ -1,0 +1,100 @@
+import time
+import machine
+
+# Configuración de sensores ultrasónicos (Triggers y Echos)
+ULT1_1 = machine.Pin(33, machine.Pin.OUT)
+ULT1_2 = machine.Pin(32, machine.Pin.IN)
+
+ULT2_1 = machine.Pin(26, machine.Pin.OUT)
+ULT2_2 = machine.Pin(25, machine.Pin.IN)
+
+ULT3_1 = machine.Pin(14, machine.Pin.OUT)
+ULT3_2 = machine.Pin(27, machine.Pin.IN)
+
+ULT4_1 = machine.Pin(13, machine.Pin.OUT)
+ULT4_2 = machine.Pin(5, machine.Pin.IN)
+
+# Sensores infrarrojos (para detección de línea o suelo)
+IR1 = machine.Pin(34, machine.Pin.IN)
+IR2 = machine.Pin(35, machine.Pin.IN)
+# PWM para controlar la velocidad de los motores
+PWM1 = machine.PWM(machine.Pin(17), freq=1000)
+PWM2 = machine.PWM(machine.Pin(15), freq=1000)
+
+# Pines de dirección de los motores (Driver de motores)
+IN1 = machine.Pin(18, machine.Pin.OUT)
+IN2 = machine.Pin(19, machine.Pin.OUT)
+IN3 = machine.Pin(21, machine.Pin.OUT)
+IN4 = machine.Pin(22, machine.Pin.OUT)
+
+NO = 0
+SI = 0
+
+def medir_distancia(trigger, echo):
+    trigger.value(0)
+    time.sleep_us(2)
+    trigger.value(1)
+    time.sleep_us(10)
+    trigger.value(0)
+
+    espera = time.ticks_us()
+    while echo.value() == 0:
+        if time.ticks_diff(time.ticks_us(), espera) > 6000:
+            return 100
+
+    inicio = time.ticks_us()
+    while echo.value() == 1:
+        if time.ticks_diff(time.ticks_us(), inicio) > 6000:
+            return 100
+
+    duracion = time.ticks_diff(time.ticks_us(), inicio)
+    return min((duracion * 0.0343) / 2, 100)
+
+def avanzar():
+    IN1.value(1)
+    IN2.value(0)
+    # IN3 e IN4 invertidos entre sí respecto al original
+    IN3.value(0)
+    IN4.value(1)
+    PWM1.duty(1000)
+    PWM2.duty(1000)
+    print("A")
+
+def retroceder():
+    IN1.value(0)
+    IN2.value(1)
+    # IN3 e IN4 invertidos entre sí respecto al original
+    IN3.value(1)
+    IN4.value(0)
+    PWM1.duty(1000)
+    PWM2.duty(1000)
+    print("R")
+
+def detener():
+    IN1.value(0)
+    IN2.value(0)
+    # IN3 e IN4 invertidos entre sí respecto al original
+    IN3.value(0)
+    IN4.value(0)
+    PWM1.duty(0)
+    PWM2.duty(0)
+
+print("Iniciando sistema...")
+time.sleep_ms(3000)  # Espera 3 segundos antes de iniciar el bucle principal
+avanzar()
+time.sleep_ms(500)
+detener()
+while True:
+        d1 = medir_distancia(ULT1_1, ULT1_2)
+        d2 = medir_distancia(ULT2_1, ULT2_2)
+        d3 = medir_distancia(ULT3_1, ULT3_2)
+        d4 = medir_distancia(ULT4_1, ULT4_2)
+        print(d4, d3, d2, d1, SI, NO,IR1.value() ,IR2.value())
+        if IR1.value() == 0 and IR2.value() == 0 :
+            detener()
+        elif IR1.value() == 1 and IR2.value() == 0 :
+            retroceder()
+        elif IR1.value() == 0 and IR2.value() == 1:
+            avanzar()
+        else : # ambos en blanco
+            detener()
