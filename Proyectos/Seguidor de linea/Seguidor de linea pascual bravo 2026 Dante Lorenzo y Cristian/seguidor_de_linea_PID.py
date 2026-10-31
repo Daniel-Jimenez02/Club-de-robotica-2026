@@ -8,8 +8,8 @@ import time
 
 Boton = Pin(6, Pin.IN, Pin.PULL_UP) # Boton para calibracion de sensores
 LED = Pin("LED", Pin.OUT) # Led para calibracion de sensores, integrado de la pico
-velocidad_base = 0.5
-velocidad_max = 0.75
+velocidad_base = 0.9
+velocidad_max = 1
 regleta = [0] * 15
 minimos = [65535] * 15
 maximos = [0] * 15
@@ -18,8 +18,8 @@ maximos = [0] * 15
 # Variables PID(Dani espero que este bueno, sino me pones comentario en el github para saber como hacerlo)
 #-------------------------------------------------------
 
-kp = 1
-kd = 0.01
+kp = 5
+kd = 0.04
 ki = 0
 
 
