@@ -1,5 +1,5 @@
 # Codigo PID seguidor de linea pascual bravo 2026
-# Dante, Lorenzo y Cristian(Los ganadores espero)
+# Dante, Lorenzo y Cristian(Los ganadores espero, PD si fuimos los ganadores)
 from machine import Pin, ADC, PWM
 import time
 #-------------------------------------------------------
@@ -8,7 +8,7 @@ import time
 
 Boton = Pin(6, Pin.IN, Pin.PULL_UP) # Boton para calibracion de sensores
 LED = Pin("LED", Pin.OUT) # Led para calibracion de sensores, integrado de la pico
-velocidad_base = 0.9
+velocidad_base = 0.95
 velocidad_max = 1
 regleta = [0] * 15
 minimos = [65535] * 15
@@ -18,7 +18,7 @@ maximos = [0] * 15
 # Variables PID(Dani espero que este bueno, sino me pones comentario en el github para saber como hacerlo)
 #-------------------------------------------------------
 
-kp = 5
+kp = 2.5
 kd = 0.04
 ki = 0
 
