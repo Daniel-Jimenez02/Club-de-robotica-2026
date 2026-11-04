@@ -39,7 +39,7 @@ Experiencias en las diferentes competencias de octubre:
 
 SUMO- viernes 02 de octubre 
 ​El torneo de sumo fue todo un disturbio para mí, porqué aunque siento que se había logrado un buen trabajo previo, el día de la competencia todo cambió por problemas externos, ya que casi todos los equipos del club EPM quedamos revueltos y terminé compitiendo con un robot que originalmente no era el mío. 
-¿Qué aprendí de ello? De esto aprendí que para futuras participaciones debo mejorar el control de los tiempos de preparación y desarrollar una capacidad de adaptación rápida para mantener la calma ante imprevistos de última hora. 
+¿Qué aprendí de ello? De esto aprendí que para futuras participaciones debo mejorar el control de los tiempos de preparación y desarrollar una capacidad de adaptación rápida para mantener la calma ante imprevistos de última hora tu puedes.
 
 SEGUIDOR DE LÍNEA- sábado 03 de octubre 
 Esta fue mi primera participación en la categoría de seguidor de línea,pero me pasó casi lo mismo que en sumo, me cambiaron de equipo y terminé compitiendo con un robot que no era mío, por lo que esta situación me obligó a adaptarme a un hardware desconocido, mostrándome que la calibración de los sensores frente a variables externas cambia completamente el rendimiento.
